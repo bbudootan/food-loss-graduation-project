@@ -1,6 +1,5 @@
 # food-loss-graduation-project
-A graduation project tackling food waste through gamification, transforming every purchase into visible environmental impact.
-ゲーミフィケーションでフードロスを解決。日々の買い物を「目に見えるエコな成果」に！
+本プロジェクトは、食費を抑えたい方や環境問題に関心のある方を対象に、ゲーミフィケーションを通じてフードロス問題に取り組む卒業制作です。日々の買い物を「目に見えるエコな成果」へと変え、ゲーム感覚で楽しみながら継続的な環境貢献を実現します。
 
 ## システムを開発したい理由および取り巻く背景・課題等
 
