@@ -4,7 +4,8 @@
 ## 画面一覧
 
 | 画面 | 保存済みのバージョン |
-|---|---|| 共通レイアウト・ナビゲーション | [v2](./00_common/v2/README.md) / [v3](./00_common/v3/README.md) |
+|---|---|
+| 共通レイアウト・ナビゲーション | [v2](./00_common/v2/README.md) / [v3](./00_common/v3/README.md) |
 | ホームページ | [v1](./01_homepage/v1/README.md) / [v2](./01_homepage/v2/README.md) / [v3](./01_homepage/v3/README.md) |
 | 商品一覧 | [v3](./02_product_listing/v3/README.md) |
 | 店舗一覧 | [v3](./03_store_listing/v3/README.md) |
