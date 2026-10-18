@@ -1,6 +1,6 @@
 # Wireframes
 
-本ディレクトリでは、JEC Food Rescue のワイヤーフレームを **アクター → 画面 → 版** の順で管理します。
+本ディレクトリでは、JEC Food Rescue のワイヤーフレームを **アクター → 画面 → バージョン** の順で管理します。
 
 - [01_user：一般利用者向け](./01_user/README.md)
 - [02_store_operator：店舗運営者向け](./02_store_operator/README.md)

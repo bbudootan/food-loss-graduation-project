@@ -1,6 +1,10 @@
 # 共通レイアウト・Account Drawer — Wireframe v3
 
+## 画面プレビュー
 
+![共通レイアウト：ユーザーログイン済のワイヤーフレーム](./account_drawer_logged_in.svg)
+
+![共通レイアウト：ログインしてないのワイヤーフレーム](./account_drawer_guest.svg)
 
 ## 共通レイアウトの使い方
 
