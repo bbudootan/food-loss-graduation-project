@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="256" class="svgbob"><style>.svgbob line, .svgbob path, .svgbob circle, .svgbob rect, .svgbob polygon {
+    stroke: black;
+    stroke-width: 2;
+    stroke-opacity: 1;
+    fill-opacity: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+}
+.svgbob text {
+    white-space: pre;
+    fill: black;
+    font-family: Iosevka Fixed, monospace;
+    font-size: 14px;
+}
+.svgbob rect.backdrop {
+    stroke: none;
+    fill: white;
+}
+.svgbob .broken {
+    stroke-dasharray: 8;
+}
+.svgbob .filled {
+    fill: black;
+}
+.svgbob .bg_filled {
+    fill: white;
+    stroke-width: 1;
+}
+.svgbob .nofill {
+    fill: white;
+}
+.svgbob .end_marked_arrow {
+    marker-end: url(#arrow);
+}
+.svgbob .start_marked_arrow {
+    marker-start: url(#arrow);
+}
+.svgbob .end_marked_diamond {
+    marker-end: url(#diamond);
+}
+.svgbob .start_marked_diamond {
+    marker-start: url(#diamond);
+}
+.svgbob .end_marked_circle {
+    marker-end: url(#circle);
+}
+.svgbob .start_marked_circle {
+    marker-start: url(#circle);
+}
+.svgbob .end_marked_open_circle {
+    marker-end: url(#open_circle);
+}
+.svgbob .start_marked_open_circle {
+    marker-start: url(#open_circle);
+}
+.svgbob .end_marked_big_open_circle {
+    marker-end: url(#big_open_circle);
+}
+.svgbob .start_marked_big_open_circle {
+    marker-start: url(#big_open_circle);
+}<!--separator--></style><defs><marker id="arrow" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,0 0,4 4,2 0,0"></polygon></marker><marker id="diamond" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,2 2,0 4,2 2,4 0,2"></polygon></marker><marker id="circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="2" class="filled"></circle></marker><marker id="open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="2" class="bg_filled"></circle></marker><marker id="big_open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="3" class="bg_filled"></circle></marker></defs><rect class="backdrop" x="0" y="0" width="432" height="256"></rect><rect x="32" y="176" width="8" height="16" class="solid nofill" rx="0"></rect><text x="18" y="28" >JEC</text><text x="50" y="28" >Food</text><text x="90" y="28" >Rescue</text><text x="154" y="76" >[</text><text x="146" y="108" >ス[</text><text x="170" y="124" >[</text><text x="50" y="156" >12文</text><text x="82" y="76" >ク</text><text x="82" y="92" >ュ</text><text x="82" y="108" >ル</text><text x="82" y="124" >ワ</text><text x="82" y="140" >ワ</text><text x="82" y="156" >字</text><text x="98" y="76" >ネ</text><text x="98" y="92" >ー</text><text x="98" y="108" >ア</text><text x="98" y="124" >ー</text><text x="98" y="140" >ー</text><text x="98" y="156" >以</text><text x="114" y="76" >ー</text><text x="114" y="92" >な</text><text x="114" y="108" >ド</text><text x="114" y="124" >ド</text><text x="114" y="140" >ド</text><text x="114" y="156" >上</text><text x="130" y="76" >ム</text><text x="130" y="92" >ど</text><text x="130" y="108" >レ</text><text x="378" y="76" >]</text><text x="194" y="92" >さ</text><text x="210" y="92" >れ</text><text x="226" y="92" >る</text><text x="242" y="92" >名</text><text x="258" y="92" >前</text><text x="274" y="92" >で</text><text x="290" y="92" >す</text><text x="306" y="92" >。</text><text x="378" y="108" >]</text><text x="386" y="140" >]</text><text x="338" y="124" >]</text><text x="354" y="124" >[表</text><text x="130" y="140" >（</text><text x="146" y="140" >確</text><text x="202" y="140" >[</text><text x="50" y="188" >[利</text><text x="74" y="188" >用</text><text x="90" y="188" >規</text><text x="106" y="188" >約</text><text x="122" y="188" >]・</text><text x="298" y="188" >ー</text><text x="298" y="204" >る</text><text x="314" y="188" >]に</text><text x="314" y="204" >]</text><text x="338" y="188" >同</text><text x="354" y="188" >意</text><text x="370" y="188" >す</text><text x="386" y="188" >る</text><g><line x1="4" y1="8" x2="420" y2="8" class="solid"></line><line x1="4" y1="8" x2="4" y2="232" class="solid"></line><line x1="420" y1="8" x2="420" y2="232" class="solid"></line><line x1="4" y1="40" x2="420" y2="40" class="solid"></line><line x1="4" y1="232" x2="420" y2="232" class="solid"></line></g><g><text x="282" y="28">[ホ</text><text x="306" y="28">ー</text><text x="322" y="28">ム</text><text x="338" y="28">へ</text><text x="354" y="28">戻</text><text x="370" y="28">る</text><text x="386" y="28">]</text></g><g><text x="146" y="60">新</text><text x="162" y="60">規</text><text x="178" y="60">登</text><text x="194" y="60">録</text></g><g><text x="146" y="92">で</text><text x="162" y="92">公</text><text x="178" y="92">開</text></g><g><text x="162" y="140">認</text><text x="178" y="140">）</text></g><g><text x="146" y="188">[プ</text><text x="170" y="188">ラ</text><text x="186" y="188">イ</text><text x="202" y="188">バ</text><text x="218" y="188">シ</text><text x="234" y="188">ー</text><text x="250" y="188">ポ</text><text x="266" y="188">リ</text><text x="282" y="188">シ</text></g><g><text x="146" y="204">[登</text><text x="170" y="204">録</text><text x="186" y="204">確</text><text x="202" y="204">認</text><text x="218" y="204">メ</text><text x="234" y="204">ー</text><text x="250" y="204">ル</text><text x="266" y="204">を</text><text x="282" y="204">送</text></g><g><text x="50" y="220">す</text><text x="66" y="220">で</text><text x="82" y="220">に</text><text x="98" y="220">登</text><text x="114" y="220">録</text><text x="130" y="220">済</text><text x="146" y="220">み</text><text x="162" y="220">の</text><text x="178" y="220">方</text></g><g><text x="210" y="220">[ロ</text><text x="234" y="220">グ</text><text x="250" y="220">イ</text><text x="266" y="220">ン</text><text x="282" y="220">]</text></g><g><text x="50" y="76">ニ</text><text x="66" y="76">ッ</text></g><g><text x="50" y="92">レ</text><text x="66" y="92">ビ</text></g><g><text x="50" y="108">メ</text><text x="66" y="108">ー</text></g><g><text x="50" y="124">パ</text><text x="66" y="124">ス</text></g><g><text x="50" y="140">パ</text><text x="66" y="140">ス</text></g><g><text x="378" y="124">示</text><text x="394" y="124">]</text></g></svg>

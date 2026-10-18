@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="240" class="svgbob"><style>.svgbob line, .svgbob path, .svgbob circle, .svgbob rect, .svgbob polygon {
+    stroke: black;
+    stroke-width: 2;
+    stroke-opacity: 1;
+    fill-opacity: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+}
+.svgbob text {
+    white-space: pre;
+    fill: black;
+    font-family: Iosevka Fixed, monospace;
+    font-size: 14px;
+}
+.svgbob rect.backdrop {
+    stroke: none;
+    fill: white;
+}
+.svgbob .broken {
+    stroke-dasharray: 8;
+}
+.svgbob .filled {
+    fill: black;
+}
+.svgbob .bg_filled {
+    fill: white;
+    stroke-width: 1;
+}
+.svgbob .nofill {
+    fill: white;
+}
+.svgbob .end_marked_arrow {
+    marker-end: url(#arrow);
+}
+.svgbob .start_marked_arrow {
+    marker-start: url(#arrow);
+}
+.svgbob .end_marked_diamond {
+    marker-end: url(#diamond);
+}
+.svgbob .start_marked_diamond {
+    marker-start: url(#diamond);
+}
+.svgbob .end_marked_circle {
+    marker-end: url(#circle);
+}
+.svgbob .start_marked_circle {
+    marker-start: url(#circle);
+}
+.svgbob .end_marked_open_circle {
+    marker-end: url(#open_circle);
+}
+.svgbob .start_marked_open_circle {
+    marker-start: url(#open_circle);
+}
+.svgbob .end_marked_big_open_circle {
+    marker-end: url(#big_open_circle);
+}
+.svgbob .start_marked_big_open_circle {
+    marker-start: url(#big_open_circle);
+}<!--separator--></style><defs><marker id="arrow" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,0 0,4 4,2 0,0"></polygon></marker><marker id="diamond" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,2 2,0 4,2 2,4 0,2"></polygon></marker><marker id="circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="2" class="filled"></circle></marker><marker id="open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="2" class="bg_filled"></circle></marker><marker id="big_open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="3" class="bg_filled"></circle></marker></defs><rect class="backdrop" x="0" y="0" width="432" height="240"></rect><rect x="4" y="8" width="416" height="208" class="solid nofill" rx="0"></rect><text x="18" y="76" >注</text><text x="18" y="92" >店</text><text x="18" y="108" >受</text><text x="18" y="124" >受</text><text x="34" y="76" >文</text><text x="34" y="92" >舗</text><text x="34" y="108" >取</text><text x="34" y="124" >取</text><text x="50" y="76" >番</text><text x="50" y="92" >：</text><text x="50" y="108" >可</text><text x="50" y="124" >予</text><text x="66" y="76" >号</text><text x="66" y="92" >こ</text><text x="66" y="108" >能</text><text x="66" y="124" >定</text><text x="82" y="76" >：</text><text x="82" y="92" >も</text><text x="82" y="108" >：</text><text x="82" y="124" >：</text><text x="98" y="76" >FR</text><line x1="112" y1="72" x2="120" y2="72" class="solid"></line><text x="122" y="76" >20261013</text><line x1="184" y1="72" x2="192" y2="72" class="solid"></line><text x="194" y="76" >001</text><text x="98" y="108" >10</text><text x="122" y="108" >13</text><text x="146" y="108" >18:00</text><line x1="184" y1="104" x2="192" y2="104" class="solid"></line><text x="194" y="108" >19:00</text><text x="98" y="124" >18:30</text><line x1="152" y1="112" x2="144" y2="128" class="solid"></line><text x="274" y="172" >見</text><text x="290" y="172" >る</text><text x="306" y="172" >]</text><g><text x="98" y="28">✓</text><text x="114" y="28">ご</text><text x="130" y="28">注</text><text x="146" y="28">文</text><text x="162" y="28">あ</text><text x="178" y="28">り</text><text x="194" y="28">が</text><text x="210" y="28">と</text><text x="226" y="28">う</text><text x="242" y="28">ご</text><text x="258" y="28">ざ</text><text x="274" y="28">い</text><text x="290" y="28">ま</text><text x="306" y="28">す</text><text x="322" y="28">！</text></g><g><text x="122" y="44">お</text><text x="138" y="44">支</text><text x="154" y="44">払</text><text x="170" y="44">い</text><text x="186" y="44">が</text><text x="202" y="44">完</text><text x="218" y="44">了</text><text x="234" y="44">し</text><text x="250" y="44">ま</text><text x="266" y="44">し</text><text x="282" y="44">た</text><text x="298" y="44">。</text></g><g><text x="18" y="156">[受</text><text x="42" y="156">取</text><text x="58" y="156">画</text><text x="74" y="156">面</text><text x="90" y="156">を</text><text x="106" y="156">開</text><text x="122" y="156">く</text><text x="138" y="156">]</text></g><g><text x="18" y="172">[注</text><text x="42" y="172">文</text><text x="58" y="172">履</text><text x="74" y="172">歴</text><text x="90" y="172">を</text><text x="106" y="172">見</text><text x="122" y="172">る</text><text x="138" y="172">]</text></g><g><text x="154" y="172">[ほ</text><text x="178" y="172">か</text><text x="194" y="172">の</text><text x="210" y="172">カ</text><text x="226" y="172">ー</text><text x="242" y="172">ト</text><text x="258" y="172">を</text></g><g><text x="18" y="188">受</text><text x="34" y="188">け</text><text x="50" y="188">取</text><text x="66" y="188">り</text><text x="82" y="188">は</text><text x="98" y="188">ま</text><text x="114" y="188">だ</text><text x="130" y="188">完</text><text x="146" y="188">了</text><text x="162" y="188">し</text><text x="178" y="188">て</text><text x="194" y="188">い</text><text x="210" y="188">ま</text><text x="226" y="188">せ</text><text x="242" y="188">ん</text><text x="258" y="188">。</text></g><g><text x="18" y="204">特</text><text x="34" y="204">典</text><text x="50" y="204">は</text><text x="66" y="204">受</text><text x="82" y="204">け</text><text x="98" y="204">取</text><text x="114" y="204">り</text><text x="130" y="204">後</text><text x="146" y="204">に</text><text x="162" y="204">反</text><text x="178" y="204">映</text><text x="194" y="204">さ</text><text x="210" y="204">れ</text><text x="226" y="204">ま</text><text x="242" y="204">す</text><text x="258" y="204">。</text></g><g><text x="98" y="92">れ</text><text x="114" y="92">び</text><text x="130" y="92">ベ</text><text x="146" y="92">ー</text><text x="162" y="92">カ</text><text x="178" y="92">リ</text><text x="194" y="92">ー</text></g><g><line x1="120" y1="96" x2="116" y2="104" class="solid"></line><line x1="116" y1="104" x2="116" y2="112" class="solid"></line></g><g><text x="162" y="124">お</text><text x="178" y="124">支</text><text x="194" y="124">払</text><text x="210" y="124">い</text><text x="226" y="124">：</text></g><g><text x="242" y="124">¥</text><text x="250" y="124">1,100</text></g></svg>
