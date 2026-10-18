@@ -6,7 +6,7 @@ v2で未作成だった退会ページを新規追加し、設定ページから
 
 ![退会ページ全体のワイヤーフレーム](./withdrawal_overview.svg)
 
-![最終確認ページのワイヤーフレーム](./withdrawal_final_confirmation.svg)
+![最終確認ページのワイヤーフレーム](./withdrawal_final_confirmatio.svg)
 
 ## 12-1. 退会ページ全体
 
