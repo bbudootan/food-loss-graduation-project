@@ -1,6 +1,18 @@
 # 注文履歴 — Wireframe v3
 
+## 画面プレビュー
 
+![受取待ちON-1のワイヤーフレーム](./pending_orders.svg)
+
+![受取待ちON-2のワイヤーフレーム](./pending_order_detail.svg)
+
+![受取完了ON-1のワイヤーフレーム](./completed_orders.svg)
+
+![受取完了ON-2のワイヤーフレーム](./completed_order_detail.svg)
+
+![受取完了ON-3のワイヤーフレーム](./review_form.svg)
+
+![受取完了ON-4のワイヤーフレーム](./receipt.svg)
 
 ## 9-1. 受取待ちON
 

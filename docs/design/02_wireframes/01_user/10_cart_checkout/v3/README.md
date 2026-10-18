@@ -1,8 +1,16 @@
 # カート・注文・決済 — Wireframe v3
 
-
-
 流れ：①カート → ②注文内容確認 → ③決済完了、店舗へ受取準備
+
+## 画面プレビュー
+
+![カート全体のワイヤーフレーム](./cart_overview.svg)
+
+![店舗ごとのカート詳細のワイヤーフレーム](./cart_store_detail.svg)
+
+![注文確認のワイヤーフレーム](./checkout_confirmation.svg)
+
+![注文完了UIのワイヤーフレーム](./order_complete.svg)
 
 ## 8-1. カート全体
 

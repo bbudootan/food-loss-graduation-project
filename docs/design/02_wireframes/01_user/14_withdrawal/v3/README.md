@@ -1,8 +1,12 @@
 # 退会 — Wireframe v3
 
-
-
 v2で未作成だった退会ページを新規追加し、設定ページからアクセスできる構成とした。
+
+## 画面プレビュー
+
+![退会ページ全体のワイヤーフレーム](./withdrawal_overview.svg)
+
+![最終確認ページのワイヤーフレーム](./withdrawal_final_confirmation.svg)
 
 ## 12-1. 退会ページ全体
 

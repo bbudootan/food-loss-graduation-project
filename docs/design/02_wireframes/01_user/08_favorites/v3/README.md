@@ -1,6 +1,10 @@
 # お気に入り — Wireframe v3
 
+## 画面プレビュー
 
+![お気に入り-店舗タブONのワイヤーフレーム](./favorite_stores.svg)
+
+![お気に入り-商品タブONのワイヤーフレーム](./favorite_products.svg)
 
 ## 6-1. 店舗タブON
 

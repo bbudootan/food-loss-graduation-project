@@ -1,6 +1,12 @@
 # ホームページ — Wireframe v3
 
+## 画面プレビュー
 
+![ホームページ全体のワイヤーフレーム](./homepage_overview.svg)
+
+![商品カードのワイヤーフレーム](./product_card.svg)
+
+![店舗カードのワイヤーフレーム](./store_card.svg)
 
 ## 1-1. ホームページ全体
 
