@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="nnaAprBxz9_ZseoK8ycF">
+    <mxGraphModel dx="813" dy="941" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="peEfBrXHtkJWQgx9odS6-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="500" width="640" x="260" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="peEfBrXHtkJWQgx9odS6-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="640" x="260" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="peEfBrXHtkJWQgx9odS6-3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="825" y="500" as="sourcePoint" />
+            <mxPoint x="335" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="peEfBrXHtkJWQgx9odS6-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="管理者ログイン" vertex="1">
+          <mxGeometry height="30" width="110" x="330" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="peEfBrXHtkJWQgx9odS6-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="270" width="490" x="340" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="peEfBrXHtkJWQgx9odS6-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="420" x="380" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="peEfBrXHtkJWQgx9odS6-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="420" x="380" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="peEfBrXHtkJWQgx9odS6-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;span style=&quot;color: rgb(36, 41, 35); font-family: &amp;quot;Yu Gothic&amp;quot;, Meiryo, &amp;quot;Hiragino Kaku Gothic ProN&amp;quot;, sans-serif; font-size: 13px; font-weight: 700; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;管理者ID&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="373" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="peEfBrXHtkJWQgx9odS6-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;span style=&quot;color: rgb(36, 41, 35); font-family: &amp;quot;Yu Gothic&amp;quot;, Meiryo, &amp;quot;Hiragino Kaku Gothic ProN&amp;quot;, sans-serif; font-size: 13px; font-weight: 700; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;パスワード&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="373" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="peEfBrXHtkJWQgx9odS6-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="JEC　FOODS" vertex="1">
+          <mxGeometry height="30" width="100" x="260" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="peEfBrXHtkJWQgx9odS6-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ログイン" vertex="1">
+          <mxGeometry height="35" width="120" x="380" y="740" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
