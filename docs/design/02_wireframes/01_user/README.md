@@ -5,10 +5,10 @@
 
 | 画面 | 保存済みのバージョン |
 |---|---|
-| 共通レイアウト・ナビゲーション | [v2](./00_common/v2/README.md) / [v3](./00_common/v3/README.md) |
-| ホームページ | [v1](./01_homepage/v1/README.md) / [v2](./01_homepage/v2/README.md) / [v3](./01_homepage/v3/README.md) |
-| 商品一覧 | [v3](./02_product_listing/v3/README.md) |
-| 店舗一覧 | [v3](./03_store_listing/v3/README.md) |
+| 共通レイアウト・ナビゲーション | [v2](./00_common/v2/README.md) / [v3](./00_common/v3/README.md) / [v4](./00_common/v4/README.md) |
+| ホームページ | [v1](./01_homepage/v1/README.md) / [v2](./01_homepage/v2/README.md) / [v3](./01_homepage/v3/README.md) / [v4](./01_homepage/v4/README.md) |
+| 商品一覧 | [v3](./02_product_listing/v3/README.md) / [v4](./02_product_listing/v4/README.md) |
+| 店舗一覧 | [v3](./03_store_listing/v3/README.md) / [v4](./03_store_listing/v4/README.md) |
 | 商品詳細 | [v3](./04_product_detail/v3/README.md) |
 | 店舗詳細 | [v3](./05_store_detail/v3/README.md) |
 | マイページ | [v1](./06_mypage/v1/README.md) / [v2](./06_mypage/v2/README.md) / [v3](./06_mypage/v3/README.md) |
@@ -20,12 +20,11 @@
 | ログイン | [v2](./12_login/v2/README.md) / [v3](./12_login/v3/README.md) |
 | 新規登録 | [v2](./13_signup/v2/README.md) / [v3](./13_signup/v3/README.md) |
 | 退会 | [v3](./14_withdrawal/v3/README.md) |
+| 地図で探そう | [v4](./15_map_search/v4/README.md) |
 
-## v3の設計方針と採用技術
+## 設計方針と採用技術
 
 本プロジェクトのワイヤーフレーム制作では、Figmaやdraw.ioなどの作図ツールを使用せず、ASCIIテキストによる設計手法を採用しました。
-
-限られた開発リソースの中で品質と効率を両立させるため、AIコーディングエージェントの活用を見据え、設計から実装への移行を円滑に進められる制作プロセスを重視しています。
 
 ### 採用理由
 
