@@ -1,0 +1,73 @@
+%%{init: {"theme":"base","layout":"dagre","flowchart":{"curve":"basis","nodeSpacing":30,"rankSpacing":70}}}%%
+
+
+flowchart TB
+subgraph browsing["① 商品・店舗を探す"]
+H["ホーム"]
+P["商品一覧"]
+S["店舗一覧"]
+MAP["地図で探そう"]
+PD["商品詳細"]
+SD["店舗詳細"]
+
+H --> P
+H --> S
+H --> MAP
+P --> PD
+S --> SD
+MAP --> PD
+MAP --> SD
+SD --> PD
+PD --> SD
+end
+
+subgraph purchase["② 注文・受取"]
+C["カート"]
+CHECK["注文確認・お支払い"]
+DONE["注文完了"]
+HISTORY["注文履歴"]
+ORDER["注文詳細・受取画面"]
+
+C --> CHECK
+CHECK --> DONE
+DONE --> ORDER
+DONE --> HISTORY
+HISTORY --> ORDER
+end
+
+subgraph account["③ アカウント・会員機能"]
+LOGIN["ログイン"]
+SIGNUP["新規登録"]
+MY["マイページ"]
+FAV["お気に入り"]
+COUPON["クーポン"]
+NOTICE["通知"]
+SETTINGS["設定"]
+
+LOGIN --> SIGNUP
+SIGNUP --> LOGIN
+MY --> FAV
+MY --> COUPON
+MY --> SETTINGS
+end
+
+subgraph support["④ ヘルプ・サポート"]
+FAQ["FAQ・ご利用ガイド"]
+CONTACT["お問い合わせ"]
+end
+
+PD -->|"追加後、カートを開く"| C
+P -->|"一覧から追加後、カートを開く"| C
+
+H -->|"共通メニュー：未ログイン"| LOGIN
+H -->|"共通メニュー：ログイン済み"| MY
+H -->|"共通ヘッダー"| NOTICE
+
+MY --> HISTORY
+FAV --> PD
+FAV --> SD
+
+H -->|"共通メニュー"| FAQ
+H -->|"共通メニュー"| CONTACT
+ORDER -->|"注文について相談"| CONTACT
+  
