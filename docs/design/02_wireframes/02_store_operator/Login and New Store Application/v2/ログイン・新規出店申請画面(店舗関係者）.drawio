@@ -1,0 +1,271 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="a01" name="a01 システム管理者ログイン">
+    <mxGraphModel dx="-3700" dy="-2933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1040" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-204" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="660" width="570" x="6514.587706146926" y="5342.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-205" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="570" x="6514.587706146926" y="5342.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-206" parent="1" screen_id="S01-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗ログイン&lt;/font&gt;" variable_name="page_title_text" vertex="1">
+          <mxGeometry height="30" width="130" x="6539.587706146926" y="5432.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-207" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="6554.587706146926" y="5462.299850074963" as="sourcePoint" />
+            <mxPoint x="7034.587706146926" y="5462.299850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-208" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="360" width="480" x="6554.587706146926" y="5492.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-209" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;メールアドレス&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="6553.587706146926" y="5512.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-210" data_name="store_staff_id" form_name="store_staff_id" html_attribute="id" html_identifier="s01_1_store_staff_id_input" parent="1" screen_id="S01-1" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="store_staff_id_input" vertex="1">
+          <mxGeometry height="50" width="431" x="6574.587706146926" y="5542.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-211" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;パスワード&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="6568.587706146926" y="5627.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-212" data_name="password" form_name="password" html_attribute="id" html_identifier="s01_1_password_input" parent="1" screen_id="S01-1" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="password_input" vertex="1">
+          <mxGeometry height="50" width="431" x="6574.587706146926" y="5657.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-213" data_name="" form_name="" html_attribute="id" html_identifier="s01_1_login_button" parent="1" screen_id="S01-1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;spacing=1;" value="&lt;div style=&quot;font-size:10px&quot;&gt;ログイン&lt;/div&gt;" variable_name="login_button" vertex="1">
+          <mxGeometry height="60" width="120" x="6574.587706146926" y="5752.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-214" data_name="" form_name="" html_attribute="id" html_identifier="s01_1_open_store_application_link" parent="1" screen_id="S01-1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;spacing=1;" value="&lt;div style=&quot;font-size:10px&quot;&gt;新規出店の申請&lt;br&gt;&lt;/div&gt;" variable_name="open_store_application_link" vertex="1">
+          <mxGeometry height="60" width="120" x="6563.587706146926" y="5882.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-215" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="6644.587706146926" y="5932.299850074963" as="sourcePoint" />
+            <mxPoint x="6644.587706146926" y="6132.299850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-216" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="1235" width="570" x="6509.587706146926" y="6142.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-217" parent="1" screen_id="S01-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;新規出店申請&lt;/font&gt;" variable_name="page_title_text" vertex="1">
+          <mxGeometry height="30" width="130" x="6534.587706146926" y="6232.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-218" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="6549.587706146926" y="6262.299850074963" as="sourcePoint" />
+            <mxPoint x="7029.587706146926" y="6262.299850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-219" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="570" x="6509.587706146926" y="6142.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-220" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="635" width="480" x="6554.587706146926" y="6272.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-221" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗情報&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6554.587706146926" y="6282.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-222" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗名&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="6563.587706146926" y="6332.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-223" data_name="store_name" form_name="store_name" html_attribute="id" html_identifier="s01_2_store_name_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="store_name_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6568.587706146926" y="6362.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-224" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗住所&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6558.587706146926" y="6412.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-225" data_name="store_address" form_name="store_address" html_attribute="id" html_identifier="s01_2_store_address_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="store_address_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6574.587706146926" y="6442.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-226" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;電話番号&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6568.587706146926" y="6487.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-227" data_name="store_phone_number" form_name="store_phone_number" html_attribute="id" html_identifier="s01_2_store_phone_number_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="store_phone_number_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6574.587706146926" y="6517.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-228" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;担当者名&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6563.587706146926" y="6562.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-229" data_name="contact_name" form_name="contact_name" html_attribute="id" html_identifier="s01_2_contact_name_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_name_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6574.587706146926" y="6590.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-230" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;営業時間&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6568.587706146926" y="6647.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-231" data_name="business_hours" form_name="business_hours" html_attribute="id" html_identifier="s01_2_business_hours_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="business_hours_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6574.587706146926" y="6673.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-232" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗紹介&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6573.587706146926" y="6727.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-233" data_name="store_description" form_name="store_description" html_attribute="id" html_identifier="s01_2_store_description_textarea" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="store_description_textarea" vertex="1">
+          <mxGeometry height="110" width="431" x="6568.587706146926" y="6752.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-234" data_name="" form_name="" html_attribute="id" html_identifier="s01_2_confirm_store_application_button" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;spacing=1;" value="&lt;div style=&quot;font-size:10px&quot;&gt;申請内容を確認&lt;/div&gt;" variable_name="confirm_store_application_button" vertex="1">
+          <mxGeometry height="40" width="120" x="6553.587706146926" y="7297.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-235" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="1220.48" width="570" x="7304.583913043478" y="6142.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-236" parent="1" screen_id="S01-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;出店申請の確認&lt;/font&gt;" variable_name="page_title_text" vertex="1">
+          <mxGeometry height="30" width="140" x="7333.587706146926" y="6232.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-237" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="7344.587706146926" y="6262.299850074963" as="sourcePoint" />
+            <mxPoint x="7824.587706146926" y="6262.299850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-238" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="570" x="7304.587706146926" y="6142.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-239" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="635" width="480" x="7349.583913043478" y="6272.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-240" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗情報&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="7349.587706146926" y="6282.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-241" data_name="store_name" form_name="" html_attribute="id" html_identifier="s01_3_store_name_text" parent="1" screen_id="S01-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗名&lt;/font&gt;" variable_name="store_name_text" vertex="1">
+          <mxGeometry height="30" width="70" x="7358.587706146926" y="6332.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-242" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="431" x="7363.587706146926" y="6362.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-243" data_name="store_address" form_name="" html_attribute="id" html_identifier="s01_3_store_address_text" parent="1" screen_id="S01-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗住所&lt;/font&gt;" variable_name="store_address_text" vertex="1">
+          <mxGeometry height="30" width="90" x="7353.587706146926" y="6412.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-244" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="431" x="7369.587706146926" y="6442.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-245" data_name="store_phone_number" form_name="" html_attribute="id" html_identifier="s01_3_store_phone_number_text" parent="1" screen_id="S01-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;電話番号&lt;/font&gt;" variable_name="store_phone_number_text" vertex="1">
+          <mxGeometry height="30" width="90" x="7363.587706146926" y="6487.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-246" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="431" x="7369.587706146926" y="6517.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-247" data_name="contact_name" form_name="" html_attribute="id" html_identifier="s01_3_contact_name_text" parent="1" screen_id="S01-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;担当者名&lt;/font&gt;" variable_name="contact_name_text" vertex="1">
+          <mxGeometry height="30" width="90" x="7358.587706146926" y="6562.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-248" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="431" x="7369.587706146926" y="6590.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-249" data_name="business_hours" form_name="" html_attribute="id" html_identifier="s01_3_business_hours_text" parent="1" screen_id="S01-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;営業時間&lt;/font&gt;" variable_name="business_hours_text" vertex="1">
+          <mxGeometry height="30" width="90" x="7358.587706146926" y="6643.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-250" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="431" x="7368.587706146926" y="6677.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-251" data_name="store_description" form_name="" html_attribute="id" html_identifier="s01_3_store_description_text" parent="1" screen_id="S01-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗紹介&lt;/font&gt;" variable_name="store_description_text" vertex="1">
+          <mxGeometry height="30" width="90" x="7363.587706146926" y="6729.799850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-252" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="110" width="431" x="7368.587706146926" y="6762.779850074962" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-253" data_name="" form_name="" html_attribute="id" html_identifier="s01_3_submit_store_application_button" parent="1" screen_id="S01-3" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;spacing=1;" value="&lt;div style=&quot;font-size:10px&quot;&gt;この内容で申請&lt;br&gt;&lt;/div&gt;" variable_name="submit_store_application_button" vertex="1">
+          <mxGeometry height="40" width="120" x="7332.587706146926" y="7297.299850074964" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-254" data_name="" form_name="" html_attribute="id" html_identifier="s01_3_back_to_store_application_button" parent="1" screen_id="S01-3" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;spacing=1;" value="&lt;div style=&quot;font-size:10px&quot;&gt;入力に戻る&lt;/div&gt;" variable_name="back_to_store_application_button" vertex="1">
+          <mxGeometry height="40" width="120" x="7488.587706146926" y="7297.299850074964" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-255" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="665" width="520" x="8074.587706146926" y="6412.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-256" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="520" x="8074.587706146926" y="6412.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-257" parent="1" screen_id="S01-4" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;出店申請完了&lt;/font&gt;" variable_name="page_title_text" vertex="1">
+          <mxGeometry height="30" width="130" x="8104.587706146926" y="6487.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-258" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8104.587706146926" y="6517.299850074963" as="sourcePoint" />
+            <mxPoint x="8544.587706146925" y="6517.299850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-259" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="130" width="130" x="8269.587706146925" y="6557.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-260" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8294.587706146925" y="6627.299850074963" as="sourcePoint" />
+            <mxPoint x="8324.587706146925" y="6647.299850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-261" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8324.587706146925" y="6647.299850074963" as="sourcePoint" />
+            <mxPoint x="8374.587706146925" y="6597.299850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-262" data_name="completion_message" form_name="" html_attribute="id" html_identifier="s01_4_completion_message_text" parent="1" screen_id="S01-4" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;出店申請を受け付けました&lt;/font&gt;" variable_name="completion_message_text" vertex="1">
+          <mxGeometry height="40" width="260" x="8204.587706146925" y="6707.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-263" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;審査完了までお待ちください&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="280" x="8194.587706146925" y="6747.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-264" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="320" width="481" x="6554.587706146926" y="6937.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-265" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;承認後のログインに使う情報&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="240" x="6670.087706146926" y="6945.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-266" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;ログイン用メールアドレス&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="6561.587706146926" y="6987.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-267" data_name="contact_email" form_name="contact_email" html_attribute="id" html_identifier="s01_2_contact_email_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_email_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6561.587706146926" y="7017.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-268" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;ログイン用パスワード&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="6561.587706146926" y="7070.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-269" data_name="contact_email" form_name="contact_email" html_attribute="id" html_identifier="s01_2_contact_email_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_email_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6561.587706146926" y="7100.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-270" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;パスワード(確認)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="6556.587706146926" y="7147.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-271" data_name="contact_email" form_name="contact_email" html_attribute="id" html_identifier="s01_2_contact_email_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_email_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6561.587706146926" y="7179.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-272" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="320" width="481" x="7348.583913043478" y="6925.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-273" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;承認後の店舗ログインに使う情報&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="280" x="7445.083913043478" y="6937.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-274" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;ログイン用メールアドレス&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="7355.583913043478" y="6975.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-275" data_name="contact_email" form_name="contact_email" html_attribute="id" html_identifier="s01_2_contact_email_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_email_input" vertex="1">
+          <mxGeometry height="40" width="431" x="7355.583913043478" y="7005.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-276" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;ログイン用パスワード&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="7353.583913043478" y="7057.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-277" data_name="contact_email" form_name="contact_email" html_attribute="id" html_identifier="s01_2_contact_email_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_email_input" vertex="1">
+          <mxGeometry height="40" width="431" x="7355.583913043478" y="7088.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-278" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;パスワード(確認)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="7350.583913043478" y="7135.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-279" data_name="contact_email" form_name="contact_email" html_attribute="id" html_identifier="s01_2_contact_email_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_email_input" vertex="1">
+          <mxGeometry height="40" width="431" x="7355.583913043478" y="7167.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-280" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="6648.583913043478" y="7302.782608695652" as="sourcePoint" />
+            <mxPoint x="7317.173913043478" y="7302.782608695652" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-281" edge="1" parent="1" source="5yVddBB_TwAb1MP2gWdM-253" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0.1;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.832;exitY=0.906;exitDx=0;exitDy=0;exitPerimeter=0;" target="5yVddBB_TwAb1MP2gWdM-255" value="">
+          <mxGeometry height="50" relative="1" width="50" x="-0.3479" as="geometry">
+            <mxPoint x="7368.583913043478" y="7412.782608695652" as="sourcePoint" />
+            <mxPoint x="8078.583913043478" y="7412.782608695652" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
