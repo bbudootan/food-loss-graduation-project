@@ -22,6 +22,9 @@
 | 退会 | [v3](./14_withdrawal/v3/README.md) |
 | 地図で探そう | [v4](./15_map_search/v4/README.md) |
 | 通知 | [v4](./16_notifications/v4/README.md) |
+| 利用規約 | [v4](./17_terms/v4/README.md) |
+| プライバシーポリシー | [v4](./18_privacy/v4/README.md) |
+| 運営について | [v4](./19_about/v4/README.md) |
 
 ## 設計方針と採用技術
 
