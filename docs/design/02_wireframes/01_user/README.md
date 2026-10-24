@@ -16,11 +16,12 @@
 | お気に入り | [v2](./08_favorites/v2/README.md) / [v3](./08_favorites/v3/README.md) |
 | お問い合わせ | [v2](./09_contact/v2/README.md) / [v3](./09_contact/v3/README.md) |
 | カート・注文・決済 | [v2](./10_cart_checkout/v2/README.md) / [v3](./10_cart_checkout/v3/README.md) |
-| 注文履歴 | [v2](./11_order_history/v2/README.md) / [v3](./11_order_history/v3/README.md) |
+| 注文履歴 | [v2](./11_order_history/v2/README.md) / [v3](./11_order_history/v3/README.md) / [v4](./11_order_history/v4/README.md) |
 | ログイン | [v2](./12_login/v2/README.md) / [v3](./12_login/v3/README.md) |
 | 新規登録 | [v2](./13_signup/v2/README.md) / [v3](./13_signup/v3/README.md) |
 | 退会 | [v3](./14_withdrawal/v3/README.md) |
 | 地図で探そう | [v4](./15_map_search/v4/README.md) |
+| 通知 | [v4](./16_notifications/v4/README.md) |
 
 ## 設計方針と採用技術
 
