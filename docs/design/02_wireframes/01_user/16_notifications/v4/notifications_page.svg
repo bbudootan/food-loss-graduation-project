@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="664" height="704" class="svgbob"><style>.svgbob line, .svgbob path, .svgbob circle, .svgbob rect, .svgbob polygon {
+    stroke: black;
+    stroke-width: 2;
+    stroke-opacity: 1;
+    fill-opacity: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+}
+.svgbob text {
+    white-space: pre;
+    fill: black;
+    font-family: Iosevka Fixed, monospace;
+    font-size: 14px;
+}
+.svgbob rect.backdrop {
+    stroke: none;
+    fill: white;
+}
+.svgbob .broken {
+    stroke-dasharray: 8;
+}
+.svgbob .filled {
+    fill: black;
+}
+.svgbob .bg_filled {
+    fill: white;
+    stroke-width: 1;
+}
+.svgbob .nofill {
+    fill: white;
+}
+.svgbob .end_marked_arrow {
+    marker-end: url(#arrow);
+}
+.svgbob .start_marked_arrow {
+    marker-start: url(#arrow);
+}
+.svgbob .end_marked_diamond {
+    marker-end: url(#diamond);
+}
+.svgbob .start_marked_diamond {
+    marker-start: url(#diamond);
+}
+.svgbob .end_marked_circle {
+    marker-end: url(#circle);
+}
+.svgbob .start_marked_circle {
+    marker-start: url(#circle);
+}
+.svgbob .end_marked_open_circle {
+    marker-end: url(#open_circle);
+}
+.svgbob .start_marked_open_circle {
+    marker-start: url(#open_circle);
+}
+.svgbob .end_marked_big_open_circle {
+    marker-end: url(#big_open_circle);
+}
+.svgbob .start_marked_big_open_circle {
+    marker-start: url(#big_open_circle);
+}<!--separator--></style><defs><marker id="arrow" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,0 0,4 4,2 0,0"></polygon></marker><marker id="diamond" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,2 2,0 4,2 2,4 0,2"></polygon></marker><marker id="circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="2" class="filled"></circle></marker><marker id="open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="2" class="bg_filled"></circle></marker><marker id="big_open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="3" class="bg_filled"></circle></marker></defs><rect class="backdrop" x="0" y="0" width="664" height="704"></rect><rect x="20" y="184" width="616" height="128" class="solid nofill" rx="0"></rect><circle cx="36" cy="200" r="4" class="filled"></circle><text x="594" y="204" >17:00</text><text x="82" y="220" >間</text><text x="34" y="252" >こ</text><text x="34" y="268" >対</text><text x="50" y="252" >も</text><text x="50" y="268" >象</text><text x="66" y="252" >れ</text><text x="66" y="268" >注</text><text x="82" y="252" >び</text><text x="82" y="268" >文</text><text x="98" y="252" >ベ</text><text x="98" y="268" >：</text><text x="114" y="252" >ー</text><text x="130" y="252" >カ</text><text x="146" y="252" >リ</text><text x="162" y="252" >ー</text><text x="178" y="252" >の</text><text x="194" y="252" >商</text><text x="210" y="252" >品</text><text x="226" y="252" >を</text><text x="242" y="252" >、</text><text x="258" y="252" >本</text><text x="274" y="252" >日</text><text x="290" y="252" >18:00</text><line x1="328" y1="248" x2="336" y2="248" class="broken"></line><text x="338" y="252" >19:00に</text><text x="394" y="252" >受</text><text x="410" y="252" >け</text><text x="426" y="252" >取</text><text x="442" y="252" >り</text><text x="458" y="252" >で</text><text x="474" y="252" >き</text><text x="490" y="252" >ま</text><text x="506" y="252" >す</text><text x="522" y="252" >。</text><text x="538" y="204" >10/22</text><text x="114" y="268" >FR-20261022-001</text><rect x="20" y="344" width="616" height="128" class="solid nofill" rx="0"></rect><circle cx="36" cy="360" r="4" class="filled"></circle><text x="594" y="364" >12:30</text><text x="82" y="380" >ト</text><text x="162" y="380" >ま</text><text x="178" y="380" >し</text><text x="194" y="380" >た</text><text x="34" y="412" >商</text><text x="34" y="428" >現</text><text x="50" y="412" >品</text><text x="50" y="428" >在</text><text x="66" y="412" >の</text><text x="66" y="428" >の</text><text x="82" y="412" >受</text><text x="82" y="428" >保</text><text x="98" y="412" >取</text><text x="98" y="428" >有</text><text x="114" y="412" >完</text><text x="114" y="428" >ポ</text><text x="130" y="412" >了</text><text x="130" y="428" >イ</text><text x="146" y="412" >に</text><text x="146" y="428" >ン</text><text x="162" y="412" >よ</text><text x="162" y="428" >ト</text><text x="178" y="412" >り</text><text x="178" y="428" >は</text><text x="194" y="412" >10</text><text x="354" y="428" >ま</text><text x="370" y="428" >す</text><text x="386" y="428" >。</text><text x="538" y="364" >10/22</text><rect x="20" y="504" width="616" height="112" class="solid nofill" rx="0"></rect><text x="594" y="524" >18:00</text><text x="130" y="540" >援</text><text x="146" y="540" >を</text><text x="162" y="540" >受</text><text x="178" y="540" >け</text><text x="194" y="540" >付</text><text x="210" y="540" >け</text><text x="226" y="540" >ま</text><text x="242" y="540" >し</text><text x="258" y="540" >た</text><text x="34" y="572" >500</text><text x="66" y="572" >ptの</text><text x="98" y="572" >応</text><text x="114" y="572" >援</text><text x="130" y="572" >を</text><text x="146" y="572" >プ</text><text x="162" y="572" >ロ</text><text x="178" y="572" >ジ</text><text x="194" y="572" >ェ</text><text x="210" y="572" >ク</text><text x="226" y="572" >ト</text><text x="242" y="572" >の</text><text x="258" y="572" >進</text><text x="274" y="572" >捗</text><text x="290" y="572" >へ</text><text x="306" y="572" >反</text><text x="322" y="572" >映</text><text x="338" y="572" >し</text><text x="354" y="572" >ま</text><text x="370" y="572" >し</text><text x="386" y="572" >た</text><text x="402" y="572" >。</text><text x="538" y="524" >10/21</text><text x="26" y="44" >ホ</text><text x="42" y="44" >ー</text><text x="58" y="44" >ム</text><text x="82" y="44" >></text><text x="98" y="44" >通</text><text x="114" y="44" >知</text><text x="26" y="76" >通</text><text x="26" y="92" >注</text><text x="42" y="76" >知</text><text x="42" y="92" >文</text><text x="562" y="76" >未</text><text x="578" y="76" >読</text><text x="602" y="76" >2件</text><text x="58" y="92" >・</text><text x="74" y="92" >受</text><text x="90" y="92" >け</text><text x="106" y="92" >取</text><text x="122" y="92" >り</text><text x="138" y="92" >や</text><text x="154" y="92" >活</text><text x="170" y="92" >動</text><text x="186" y="92" >に</text><text x="202" y="92" >関</text><text x="218" y="92" >す</text><text x="234" y="92" >る</text><text x="250" y="92" >お</text><text x="266" y="92" >知</text><text x="282" y="92" >ら</text><text x="298" y="92" >せ</text><text x="314" y="92" >を</text><text x="330" y="92" >確</text><text x="346" y="92" >認</text><text x="362" y="92" >で</text><text x="378" y="92" >き</text><text x="394" y="92" >ま</text><text x="410" y="92" >す</text><text x="426" y="92" >。</text><text x="26" y="124" >[</text><circle cx="44" cy="120" r="4" class="filled"></circle><text x="58" y="124" >す</text><text x="74" y="124" >べ</text><text x="90" y="124" >て</text><text x="106" y="124" >]</text><text x="130" y="124" >[</text><circle cx="148" cy="120" r="4" class="nofill"></circle><text x="162" y="124" >未</text><text x="178" y="124" >読</text><text x="202" y="124" >2]</text><text x="562" y="124" >新</text><text x="578" y="124" >し</text><text x="594" y="124" >い</text><text x="610" y="124" >順</text><text x="258" y="652" >[も</text><text x="282" y="652" >っ</text><text x="298" y="652" >と</text><text x="314" y="652" >表</text><text x="330" y="652" >示</text><text x="346" y="652" >す</text><text x="362" y="652" >る</text><text x="378" y="652" >]</text><g><line x1="4" y1="8" x2="652" y2="8" class="solid"></line><line x1="4" y1="8" x2="4" y2="680" class="solid"></line><line x1="652" y1="8" x2="652" y2="680" class="solid"></line><line x1="4" y1="152" x2="652" y2="152" class="solid"></line><line x1="4" y1="680" x2="652" y2="680" class="solid"></line></g><g><text x="50" y="204">未</text><text x="66" y="204">読</text></g><g><text x="34" y="220">受</text><text x="50" y="220">取</text><text x="66" y="220">時</text></g><g><text x="98" y="204">注</text><text x="114" y="204">文</text><text x="130" y="204">・</text><text x="146" y="204">受</text><text x="162" y="204">け</text><text x="178" y="204">取</text><text x="194" y="204">り</text></g><g><text x="98" y="220">の</text><text x="114" y="220">お</text><text x="130" y="220">知</text><text x="146" y="220">ら</text><text x="162" y="220">せ</text></g><g><text x="482" y="300">[注</text><text x="506" y="300">文</text><text x="522" y="300">詳</text><text x="538" y="300">細</text><text x="554" y="300">を</text><text x="570" y="300">見</text><text x="586" y="300">る→</text><text x="618" y="300">]</text></g><g><text x="50" y="364">未</text><text x="66" y="364">読</text></g><g><text x="34" y="380">ポ</text><text x="50" y="380">イ</text><text x="66" y="380">ン</text></g><g><text x="98" y="364">ポ</text><text x="114" y="364">イ</text><text x="130" y="364">ン</text><text x="146" y="364">ト</text></g><g><text x="98" y="380">を</text><text x="114" y="380">獲</text><text x="130" y="380">得</text><text x="146" y="380">し</text></g><g><text x="466" y="460">[マ</text><text x="490" y="460">イ</text><text x="506" y="460">ペ</text><text x="522" y="460">ー</text><text x="538" y="460">ジ</text><text x="554" y="460">を</text><text x="570" y="460">見</text><text x="586" y="460">る→</text><text x="618" y="460">]</text></g><g><text x="218" y="412">pt獲</text><text x="250" y="412">得</text><text x="266" y="412">し</text><text x="282" y="412">ま</text><text x="298" y="412">し</text><text x="314" y="412">た</text><text x="330" y="412">。</text></g><g><text x="194" y="428">マ</text><text x="210" y="428">イ</text><text x="226" y="428">ペ</text><text x="242" y="428">ー</text><text x="258" y="428">ジ</text><text x="274" y="428">で</text><text x="290" y="428">確</text><text x="306" y="428">認</text><text x="322" y="428">で</text><text x="338" y="428">き</text></g><g><text x="34" y="524">[既</text><text x="58" y="524">読</text><text x="74" y="524">]</text></g><g><text x="98" y="524">応</text><text x="114" y="524">援</text></g><g><text x="34" y="540">森</text><text x="50" y="540">づ</text><text x="66" y="540">く</text><text x="82" y="540">り</text><text x="98" y="540">の</text><text x="114" y="540">応</text></g><g><text x="474" y="604">[応</text><text x="498" y="604">援</text><text x="514" y="604">状</text><text x="530" y="604">況</text><text x="546" y="604">を</text><text x="562" y="604">見</text><text x="578" y="604">る→</text><text x="610" y="604">]</text></g></svg>
