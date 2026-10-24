@@ -1,31 +1,35 @@
-# 一般利用者向けワイヤーフレーム
+# ユーザー向けワイヤーフレーム
 
 
 ## 画面一覧
 
 | 画面 | 保存済みのバージョン |
 |---|---|
-| 共通レイアウト・ナビゲーション | [v2](./00_common/v2/README.md) / [v3](./00_common/v3/README.md) |
-| ホームページ | [v1](./01_homepage/v1/README.md) / [v2](./01_homepage/v2/README.md) / [v3](./01_homepage/v3/README.md) |
-| 商品一覧 | [v3](./02_product_listing/v3/README.md) |
-| 店舗一覧 | [v3](./03_store_listing/v3/README.md) |
+| 共通レイアウト・ナビゲーション | [v2](./00_common/v2/README.md) / [v3](./00_common/v3/README.md) / [v4](./00_common/v4/README.md) |
+| ホームページ | [v1](./01_homepage/v1/README.md) / [v2](./01_homepage/v2/README.md) / [v3](./01_homepage/v3/README.md) / [v4](./01_homepage/v4/README.md) |
+| 商品一覧 | [v3](./02_product_listing/v3/README.md) / [v4](./02_product_listing/v4/README.md) |
+| 店舗一覧 | [v3](./03_store_listing/v3/README.md) / [v4](./03_store_listing/v4/README.md) |
 | 商品詳細 | [v3](./04_product_detail/v3/README.md) |
-| 店舗詳細 | [v3](./05_store_detail/v3/README.md) |
-| マイページ | [v1](./06_mypage/v1/README.md) / [v2](./06_mypage/v2/README.md) / [v3](./06_mypage/v3/README.md) |
-| FAQ・ご利用ガイド | [v2](./07_faq/v2/README.md) / [v3](./07_faq/v3/README.md) |
-| お気に入り | [v2](./08_favorites/v2/README.md) / [v3](./08_favorites/v3/README.md) |
+| 店舗詳細 | [v3](./05_store_detail/v3/README.md) / [v4](./05_store_detail/v4/README.md) |
+| マイページ | [v1](./06_mypage/v1/README.md) / [v2](./06_mypage/v2/README.md) / [v3](./06_mypage/v3/README.md) / [v4](./06_mypage/v4/README.md) |
+| FAQ・ご利用ガイド | [v2](./07_faq/v2/README.md) / [v3](./07_faq/v3/README.md) / [v4](./07_faq/v4/README.md) |
+| お気に入り | [v2](./08_favorites/v2/README.md) / [v3](./08_favorites/v3/README.md) / [v4](./08_favorites/v4/README.md) |
 | お問い合わせ | [v2](./09_contact/v2/README.md) / [v3](./09_contact/v3/README.md) |
 | カート・注文・決済 | [v2](./10_cart_checkout/v2/README.md) / [v3](./10_cart_checkout/v3/README.md) |
-| 注文履歴 | [v2](./11_order_history/v2/README.md) / [v3](./11_order_history/v3/README.md) |
+| 注文履歴 | [v2](./11_order_history/v2/README.md) / [v3](./11_order_history/v3/README.md) / [v4](./11_order_history/v4/README.md) |
 | ログイン | [v2](./12_login/v2/README.md) / [v3](./12_login/v3/README.md) |
 | 新規登録 | [v2](./13_signup/v2/README.md) / [v3](./13_signup/v3/README.md) |
 | 退会 | [v3](./14_withdrawal/v3/README.md) |
+| 地図で探そう | [v4](./15_map_search/v4/README.md) |
+| 通知 | [v4](./16_notifications/v4/README.md) |
+| 利用規約 | [v4](./17_terms/v4/README.md) |
+| プライバシーポリシー | [v4](./18_privacy/v4/README.md) |
+| 運営について | [v4](./19_about/v4/README.md) |
+| アカウント設定 | [v4](./21_account_setting/v4/README.md) |
 
-## v3の設計方針と採用技術
+## 設計方針と採用技術
 
-本プロジェクトのワイヤーフレーム制作では、Figmaやdraw.ioなどの作図ツールを使用せず、ASCIIテキストによる設計手法を採用しました。
-
-限られた開発リソースの中で品質と効率を両立させるため、AIコーディングエージェントの活用を見据え、設計から実装への移行を円滑に進められる制作プロセスを重視しています。
+本プロジェクトのワイヤーフレーム制作では、ASCIIテキストによる設計手法を採用しました。
 
 ### 採用理由
 
@@ -50,13 +54,3 @@ ASCIIテキストで記述したレイアウトは、コンピューターによ
 また、GitHubによるバージョン管理と組み合わせることで、設計変更の履歴を記録しながら、複数のレイアウト案を効率的に比較・検討できます。
 
 このように、試行錯誤を繰り返しやすく、設計と実装の両面で柔軟性を確保できることが、本手法を採用した主な理由です。
-
-**3. 今回の修正で意識したこと**
-
-特に大きく調整したのは、元の「SVGに変換すれば HTML・CSSにも簡単に直接変換できる」という印象を与えかねない部分です。
-
-実際には、ASCIIからSVGへの変換と、ASCIIの設計情報をもとにAIがHTML/CSSを実装することは別の工程です。その違いが伝わるようにしました。
-
-また、Svgbobで出力したSVGが絶対に編集できないわけではありません。SVG自体は編集可能な形式ですが、Svgbobが生成した図形をdraw.io上で個別の編集可能なオブジェクトとして扱うのは難しい、という表現のほうが技術的に正確です。
-
-この文章なら、単に「AIを使って楽をした」という説明ではなく、なぜその技術を選び、どのように設計資料を管理するのかという開発上の判断を示せます。

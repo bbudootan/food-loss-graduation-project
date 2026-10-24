@@ -1,0 +1,183 @@
+%%{init: {"theme":"base","layout":"dagre","flowchart":{"curve":"basis","nodeSpacing":30,"rankSpacing":70}}}%%
+
+flowchart LR
+
+    %% ==========================================
+    %% 共通レイアウト：起点
+    %% ==========================================
+
+    common_layout["共通レイアウト"]
+
+    %% ==========================================
+    %% ① ヘッダー中央：共通ナビゲーション
+    %% ==========================================
+
+    subgraph header_center["① ヘッダー中央：共通ナビゲーション"]
+
+        homepage_overview["ホームページ"]
+        map_search["地図で探そう"]
+        product_grid_view["商品一覧"]
+        store_grid_view["店舗一覧"]
+
+    end
+
+    %% ==========================================
+    %% ② ヘッダー右側：会員機能とドロワーメニュー
+    %% ==========================================
+
+    subgraph header_right["② ヘッダー右側：会員機能とドロワーメニュー"]
+
+        %% 通知
+        notification_auth{"ログイン済み？（通知）"}
+        notification_center["通知ページ"]
+
+        notification_auth -->|Yes| notification_center
+        notification_auth -->|No| login_form
+
+        %% カート
+        cart_auth{"ログイン済み？（カート）"}
+        cart_overview["カート"]
+
+        cart_auth -->|Yes| cart_overview
+        cart_auth -->|No| login_form
+
+        %% アカウントドロワーメニューのログイン判定
+        drawer_auth{"ログイン済み？（アカウント）"}
+
+        account_drawer_guest["ゲスト用ドロワーメニュー"]
+        account_drawer_logged_in["ログイン済みドロワーメニュー"]
+
+        drawer_auth -->|No| account_drawer_guest
+        drawer_auth -->|Yes| account_drawer_logged_in
+
+        %% --------------------------------------
+        %% ゲスト用のドロワーメニュー
+        %% --------------------------------------
+
+        login_form["ログインページ"]
+        signup_form["新規会員登録"]
+        faq_guide["ガイド・FAQ"]
+        contact_home["お問い合わせ"]
+
+        account_drawer_guest -->|「ログイン」を押す| login_form
+        account_drawer_guest -->|「新規会員登録」を押す| signup_form
+        account_drawer_guest -->|「ガイド・FAQ」を押す| faq_guide
+        account_drawer_guest -->|「お問い合わせ」を押す| contact_home
+
+        %% --------------------------------------
+        %% ログイン済みのドロワーメニュー
+        %% --------------------------------------
+
+        mypage_dashboard["マイページ"]
+        favorite_products["お気に入り"]
+        pending_orders["注文履歴"]
+        coupon_overview["クーポン"]
+        account_settings["設定"]
+
+        account_drawer_logged_in -->|「マイページ」を押す| mypage_dashboard
+        account_drawer_logged_in -->|「お気に入り」を押す| favorite_products
+        account_drawer_logged_in -->|「注文履歴」を押す| pending_orders
+        account_drawer_logged_in -->|「クーポン」を押す| coupon_overview
+        account_drawer_logged_in -->|「設定」を押す| account_settings
+        account_drawer_logged_in -->|「ガイド・FAQ」を押す| faq_guide
+        account_drawer_logged_in -->|「お問い合わせ」を押す| contact_home
+
+        %% --------------------------------------
+        %% ドロワーメニューの共通操作
+        %% --------------------------------------
+
+        drawer_closed["ドロワーメニューを閉じる<br/>元のページを表示"]
+
+        account_drawer_guest -.->|「×」を押す| drawer_closed
+        account_drawer_logged_in -.->|「×」を押す| drawer_closed
+
+        %% ログアウト
+        logout_result["ログアウト完了<br/>未ログイン状態へ"]
+
+        account_drawer_logged_in -->|「ログアウト」を押す| logout_result
+
+    end
+
+    %% ==========================================
+    %% ③ フッター：共通リンク
+    %% ==========================================
+
+    subgraph footer_links["③ フッター：共通リンク"]
+
+        terms_of_service["利用規約"]
+        privacy_policy["プライバシーポリシー"]
+        about_operator["運営について"]
+
+    end
+
+    %% ==========================================
+    %% 共通レイアウトからの画面遷移
+    %% ==========================================
+
+    %% ① HEADER中央
+    common_layout -->|LOGOまたは「ホーム」を押す| homepage_overview
+    common_layout -->|「地図で探そう」を押す| map_search
+    common_layout -->|「商品一覧」を押す| product_grid_view
+    common_layout -->|「店舗一覧」を押す| store_grid_view
+
+    %% ② HEADER右側
+    common_layout -->|🔔を押す| notification_auth
+    common_layout -->|🛒を押す| cart_auth
+    common_layout -->|👤を押す| drawer_auth
+
+    %% ③ FOOTER
+    common_layout -->|「利用規約」を押す| terms_of_service
+    common_layout -->|「プライバシーポリシー」を押す| privacy_policy
+    common_layout -->|「運営について」を押す| about_operator
+
+    %% ==========================================
+    %% スタイル定義
+    %% ==========================================
+
+    %% 作成済みページ：黄色
+    classDef completed fill:#FFF2A8,stroke:#B78B00,stroke-width:1.5px,color:#333333
+
+    %% 未作成ページ：赤色
+    classDef pending fill:#FFD6D6,stroke:#D33D3D,stroke-width:2px,color:#711111
+
+    %% Drawer：青色
+    classDef drawer fill:#DBEDFF,stroke:#4478B5,stroke-width:2px,color:#203B60
+
+    %% ログイン判定：白色・菱形
+    classDef decision fill:#FFFFFF,stroke:#555555,stroke-width:2px,color:#333333
+
+    %% 共通UI・操作結果：グレー
+    classDef process fill:#EEEEEE,stroke:#888888,stroke-width:1.5px,color:#444444
+
+    %% ==========================================
+    %% スタイル適用
+    %% ==========================================
+
+    %% 作成済みWireframe
+    class homepage_overview,product_grid_view,store_grid_view completed
+    class cart_overview,login_form,signup_form completed
+    class mypage_dashboard,favorite_products,pending_orders completed
+    class faq_guide,contact_home completed
+
+    %% 未作成ページ
+    class map_search,notification_center pending
+    class terms_of_service,privacy_policy,about_operator pending
+    class coupon_overview,account_settings pending
+
+    %% Drawer
+    class account_drawer_guest,account_drawer_logged_in drawer
+
+    %% ログイン判定
+    class notification_auth,cart_auth,drawer_auth decision
+
+    %% 共通UI・操作結果
+    class common_layout,drawer_closed,logout_result process
+
+    %% ==========================================
+    %% Subgraphの外観
+    %% ==========================================
+
+    style header_center fill:#FAFAFA,stroke:#AAB4C2,stroke-width:1.5px
+    style header_right fill:#FAFAFA,stroke:#AAB4C2,stroke-width:1.5px
+    style footer_links fill:#FAFAFA,stroke:#AAB4C2,stroke-width:1.5px
+

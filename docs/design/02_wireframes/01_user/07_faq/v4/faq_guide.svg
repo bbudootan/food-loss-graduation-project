@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="568" height="784" class="svgbob"><style>.svgbob line, .svgbob path, .svgbob circle, .svgbob rect, .svgbob polygon {
+    stroke: black;
+    stroke-width: 2;
+    stroke-opacity: 1;
+    fill-opacity: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+}
+.svgbob text {
+    white-space: pre;
+    fill: black;
+    font-family: Iosevka Fixed, monospace;
+    font-size: 14px;
+}
+.svgbob rect.backdrop {
+    stroke: none;
+    fill: white;
+}
+.svgbob .broken {
+    stroke-dasharray: 8;
+}
+.svgbob .filled {
+    fill: black;
+}
+.svgbob .bg_filled {
+    fill: white;
+    stroke-width: 1;
+}
+.svgbob .nofill {
+    fill: white;
+}
+.svgbob .end_marked_arrow {
+    marker-end: url(#arrow);
+}
+.svgbob .start_marked_arrow {
+    marker-start: url(#arrow);
+}
+.svgbob .end_marked_diamond {
+    marker-end: url(#diamond);
+}
+.svgbob .start_marked_diamond {
+    marker-start: url(#diamond);
+}
+.svgbob .end_marked_circle {
+    marker-end: url(#circle);
+}
+.svgbob .start_marked_circle {
+    marker-start: url(#circle);
+}
+.svgbob .end_marked_open_circle {
+    marker-end: url(#open_circle);
+}
+.svgbob .start_marked_open_circle {
+    marker-start: url(#open_circle);
+}
+.svgbob .end_marked_big_open_circle {
+    marker-end: url(#big_open_circle);
+}
+.svgbob .start_marked_big_open_circle {
+    marker-start: url(#big_open_circle);
+}<!--separator--></style><defs><marker id="arrow" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,0 0,4 4,2 0,0"></polygon></marker><marker id="diamond" viewBox="-2 -2 8 8" refX="4" refY="2" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><polygon points="0,2 2,0 4,2 2,4 0,2"></polygon></marker><marker id="circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="2" class="filled"></circle></marker><marker id="open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="2" class="bg_filled"></circle></marker><marker id="big_open_circle" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><circle cx="4" cy="4" r="3" class="bg_filled"></circle></marker></defs><rect class="backdrop" x="0" y="0" width="568" height="784"></rect><rect x="20" y="184" width="424" height="32" class="solid nofill" rx="0"></rect><rect x="476" y="184" width="56" height="32" class="solid nofill" rx="0"></rect><text x="18" y="44" >ホ</text><text x="34" y="44" >ー</text><text x="50" y="44" >ム</text><text x="74" y="44" >></text><text x="90" y="44" >FAQ・</text><text x="130" y="44" >ご</text><text x="146" y="44" >利</text><text x="162" y="44" >用</text><text x="178" y="44" >ガ</text><text x="194" y="44" >イ</text><text x="210" y="44" >ド</text><text x="18" y="76" >ガ</text><text x="34" y="76" >イ</text><text x="50" y="76" >ド</text><text x="66" y="76" >・</text><text x="82" y="76" >よ</text><text x="98" y="76" >く</text><text x="114" y="76" >あ</text><text x="130" y="76" >る</text><text x="146" y="76" >ご</text><text x="162" y="76" >質</text><text x="178" y="76" >問</text><text x="266" y="124" >→</text><text x="266" y="140" >を</text><text x="266" y="156" >た</text><text x="282" y="124" >③</text><text x="282" y="140" >獲</text><text x="282" y="156" >は</text><text x="298" y="124" >店</text><text x="298" y="140" >得</text><text x="298" y="156" >チ</text><text x="450" y="140" >挑</text><text x="466" y="140" >戦</text><text x="18" y="284" >よ</text><text x="18" y="300" >カ</text><text x="34" y="284" >く</text><text x="34" y="300" >テ</text><text x="50" y="284" >あ</text><text x="50" y="300" >ゴ</text><text x="66" y="284" >る</text><text x="66" y="300" >リ</text><text x="82" y="284" >ご</text><text x="82" y="300" >ー</text><text x="98" y="284" >質</text><text x="98" y="300" >を</text><text x="114" y="284" >問</text><text x="114" y="300" >開</text><text x="130" y="300" >き</text><text x="146" y="300" >、</text><text x="162" y="300" >確</text><text x="178" y="300" >認</text><text x="194" y="300" >し</text><text x="210" y="300" >た</text><text x="226" y="300" >い</text><text x="242" y="300" >質</text><text x="258" y="300" >問</text><text x="274" y="300" >を</text><text x="290" y="300" >選</text><text x="306" y="300" >ん</text><text x="322" y="300" >で</text><text x="338" y="300" >く</text><text x="354" y="300" >だ</text><text x="370" y="300" >さ</text><text x="386" y="300" >い</text><text x="402" y="300" >。</text><text x="42" y="332" >注</text><text x="146" y="348" >ル</text><text x="146" y="364" >ル</text><text x="146" y="380" >ル</text><text x="42" y="412" >受</text><text x="114" y="428" >イ</text><text x="130" y="428" >ト</text><text x="146" y="428" >ル</text><text x="42" y="460" >ア</text><text x="130" y="476" >ト</text><text x="130" y="492" >ト</text><text x="146" y="476" >ル</text><text x="146" y="492" >ル</text><text x="42" y="524" >ポ</text><text x="170" y="524" >・</text><text x="186" y="524" >応</text><text x="202" y="524" >援</text><text x="42" y="572" >…</text><text x="42" y="604" >お</text><text x="130" y="620" >ト</text><text x="146" y="620" >ル</text><text x="42" y="652" >商</text><text x="130" y="668" >ト</text><text x="146" y="668" >ル</text><text x="18" y="732" >解</text><text x="34" y="732" >決</text><text x="50" y="732" >し</text><text x="66" y="732" >ま</text><text x="82" y="732" >せ</text><text x="98" y="732" >ん</text><text x="114" y="732" >で</text><text x="130" y="732" >し</text><text x="146" y="732" >た</text><text x="162" y="732" >か</text><text x="178" y="732" >？</text><text x="410" y="732" >[お</text><text x="434" y="732" >問</text><text x="450" y="732" >い</text><text x="466" y="732" >合</text><text x="482" y="732" >わ</text><text x="498" y="732" >せ</text><text x="514" y="732" >へ</text><text x="530" y="732" >]</text><text x="18" y="332" >▼</text><text x="42" y="348" >▶</text><text x="42" y="364" >▶</text><text x="42" y="380" >▶</text><text x="18" y="412" >▼</text><text x="42" y="428" >▶</text><text x="18" y="460" >▼</text><text x="42" y="476" >▶</text><text x="42" y="492" >▶</text><text x="18" y="524" >▼</text><text x="42" y="540" >▶</text><text x="42" y="556" >▶</text><text x="18" y="604" >▼</text><text x="42" y="620" >▶</text><text x="18" y="652" >▼</text><text x="42" y="668" >▶</text><g><line x1="4" y1="8" x2="556" y2="8" class="solid"></line><line x1="4" y1="8" x2="4" y2="760" class="solid"></line><line x1="556" y1="8" x2="556" y2="760" class="solid"></line><line x1="4" y1="248" x2="556" y2="248" class="solid"></line><line x1="4" y1="696" x2="556" y2="696" class="solid"></line><line x1="4" y1="760" x2="556" y2="760" class="solid"></line></g><g><text x="18" y="108">は</text><text x="34" y="108">じ</text><text x="50" y="108">め</text><text x="66" y="108">て</text><text x="82" y="108">の</text><text x="98" y="108">方</text><text x="114" y="108">へ</text></g><g><text x="26" y="124">①</text><text x="42" y="124">商</text><text x="58" y="124">品</text><text x="74" y="124">を</text><text x="90" y="124">探</text><text x="106" y="124">す</text></g><g><text x="26" y="140">→</text><text x="42" y="140">④</text><text x="58" y="140">ポ</text><text x="74" y="140">イ</text><text x="90" y="140">ン</text><text x="106" y="140">ト</text></g><g><text x="26" y="156">→</text><text x="42" y="156">⑥</text><text x="58" y="156">「</text><text x="74" y="156">わ</text><text x="90" y="156">た</text><text x="106" y="156">し</text></g><g><text x="130" y="124">→</text><text x="146" y="124">②</text><text x="162" y="124">注</text><text x="178" y="124">文</text><text x="194" y="124">・</text><text x="210" y="124">支</text><text x="226" y="124">払</text><text x="242" y="124">い</text></g><g><text x="122" y="140">と</text><text x="138" y="140">ゲ</text><text x="154" y="140">ー</text><text x="170" y="140">ム</text><text x="186" y="140">プ</text><text x="202" y="140">レ</text><text x="218" y="140">イ</text><text x="234" y="140">回</text><text x="250" y="140">数</text></g><g><text x="122" y="156">の</text><text x="138" y="156">森</text><text x="154" y="156">」</text><text x="170" y="156">を</text><text x="186" y="156">育</text><text x="202" y="156">て</text><text x="218" y="156">る</text><text x="234" y="156">、</text><text x="250" y="156">ま</text></g><g><text x="314" y="124">舗</text><text x="330" y="124">で</text><text x="346" y="124">受</text><text x="362" y="124">取</text></g><g><text x="322" y="140">→</text><text x="338" y="140">⑤</text><text x="354" y="140">ミ</text><text x="370" y="140">ニ</text><text x="386" y="140">ゲ</text><text x="402" y="140">ー</text><text x="418" y="140">ム</text><text x="434" y="140">に</text></g><g><text x="314" y="156">ャ</text><text x="330" y="156">リ</text><text x="346" y="156">テ</text><text x="362" y="156">ィ</text><text x="378" y="156">ー</text><text x="394" y="156">を</text><text x="410" y="156">応</text><text x="426" y="156">援</text></g><g><text x="34" y="204">キ</text><text x="50" y="204">ー</text><text x="66" y="204">ワ</text><text x="82" y="204">ー</text><text x="98" y="204">ド</text><text x="114" y="204">を</text><text x="130" y="204">入</text><text x="146" y="204">力</text></g><g><text x="490" y="204">検</text><text x="506" y="204">索</text></g><g><text x="58" y="332">文</text><text x="74" y="332">・</text><text x="90" y="332">支</text><text x="106" y="332">払</text><text x="122" y="332">い</text></g><g><text x="66" y="348">質</text><text x="82" y="348">問</text><text x="98" y="348">タ</text><text x="114" y="348">イ</text><text x="130" y="348">ト</text></g><g><text x="66" y="364">質</text><text x="82" y="364">問</text><text x="98" y="364">タ</text><text x="114" y="364">イ</text><text x="130" y="364">ト</text></g><g><text x="66" y="380">質</text><text x="82" y="380">問</text><text x="98" y="380">タ</text><text x="114" y="380">イ</text><text x="130" y="380">ト</text></g><g><text x="58" y="412">け</text><text x="74" y="412">取</text><text x="90" y="412">り</text></g><g><text x="66" y="428">質</text><text x="82" y="428">問</text><text x="98" y="428">タ</text></g><g><text x="58" y="460">カ</text><text x="74" y="460">ウ</text><text x="90" y="460">ン</text><text x="106" y="460">ト</text></g><g><text x="66" y="476">質</text><text x="82" y="476">問</text><text x="98" y="476">タ</text><text x="114" y="476">イ</text></g><g><text x="66" y="492">質</text><text x="82" y="492">問</text><text x="98" y="492">タ</text><text x="114" y="492">イ</text></g><g><text x="58" y="524">イ</text><text x="74" y="524">ン</text><text x="90" y="524">ト</text><text x="106" y="524">・</text><text x="122" y="524">ゲ</text><text x="138" y="524">ー</text><text x="154" y="524">ム</text></g><g><text x="66" y="540">質</text><text x="82" y="540">問</text><text x="98" y="540">タ</text><text x="114" y="540">イ</text><text x="130" y="540">ト</text><text x="146" y="540">ル</text></g><g><text x="66" y="556">質</text><text x="82" y="556">問</text><text x="98" y="556">タ</text><text x="114" y="556">イ</text><text x="130" y="556">ト</text><text x="146" y="556">ル</text></g><g><text x="58" y="604">気</text><text x="74" y="604">に</text><text x="90" y="604">入</text><text x="106" y="604">り</text></g><g><text x="66" y="620">質</text><text x="82" y="620">問</text><text x="98" y="620">タ</text><text x="114" y="620">イ</text></g><g><text x="58" y="652">品</text><text x="74" y="652">・</text><text x="90" y="652">店</text><text x="106" y="652">舗</text></g><g><text x="66" y="668">質</text><text x="82" y="668">問</text><text x="98" y="668">タ</text><text x="114" y="668">イ</text></g></svg>
