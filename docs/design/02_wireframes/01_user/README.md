@@ -25,6 +25,7 @@
 | 利用規約 | [v4](./17_terms/v4/README.md) |
 | プライバシーポリシー | [v4](./18_privacy/v4/README.md) |
 | 運営について | [v4](./19_about/v4/README.md) |
+| アカウント設定 | [v4](./21_account_setting/v4/README.md) |
 
 ## 設計方針と採用技術
 
