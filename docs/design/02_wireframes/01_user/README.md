@@ -13,7 +13,7 @@
 | 店舗詳細 | [v3](./05_store_detail/v3/README.md) / [v4](./05_store_detail/v4/README.md) |
 | マイページ | [v1](./06_mypage/v1/README.md) / [v2](./06_mypage/v2/README.md) / [v3](./06_mypage/v3/README.md) / [v4](./06_mypage/v4/README.md) |
 | FAQ・ご利用ガイド | [v2](./07_faq/v2/README.md) / [v3](./07_faq/v3/README.md) / [v4](./07_faq/v4/README.md) |
-| お気に入り | [v2](./08_favorites/v2/README.md) / [v3](./08_favorites/v3/README.md) |
+| お気に入り | [v2](./08_favorites/v2/README.md) / [v3](./08_favorites/v3/README.md) / [v4](./08_favorites/v4/README.md) |
 | お問い合わせ | [v2](./09_contact/v2/README.md) / [v3](./09_contact/v3/README.md) |
 | カート・注文・決済 | [v2](./10_cart_checkout/v2/README.md) / [v3](./10_cart_checkout/v3/README.md) |
 | 注文履歴 | [v2](./11_order_history/v2/README.md) / [v3](./11_order_history/v3/README.md) / [v4](./11_order_history/v4/README.md) |
