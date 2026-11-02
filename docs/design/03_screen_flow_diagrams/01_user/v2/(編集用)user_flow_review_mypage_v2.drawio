@@ -1,0 +1,112 @@
+<mxfile host="Electron">
+  <diagram id="SoSLxpXV-rDrPtDo3c6q" name="第 1 页">
+    <mxGraphModel dx="1465" dy="1123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;%% JEC Food Rescue マイページとゲームの主な導線（企業レビュー用）\n%% 根拠: prototype/user-frontend-v1 / commit e06f1460b204ded0a00f5098023dcc2abb162cc1\n%% わたしの森・みんなで応援する森づくりはマイページ内の領域であり独立した画面ではありません。\n%% 点線は詳細ワイヤーフレームが未作成のモーダルを表します。\n%% ポイントの付与・ゲーム報酬の発生は画面遷移ではないため矢印にしていません。\n%%{init: {\&quot;theme\&quot;:\&quot;base\&quot;, \&quot;flowchart\&quot;:{\&quot;curve\&quot;:\&quot;basis\&quot;,\&quot;nodeSpacing\&quot;:35,\&quot;rankSpacing\&quot;:65}, \&quot;themeVariables\&quot;:{\&quot;fontFamily\&quot;:\&quot;sans-serif\&quot;,\&quot;fontSize\&quot;:\&quot;18px\&quot;,\&quot;primaryTextColor\&quot;:\&quot;#19333a\&quot;,\&quot;lineColor\&quot;:\&quot;#567079\&quot;}}}%%\nflowchart LR\n    accountDrawer[\&quot;アカウントドロワー\&quot;]\n    mypage[\&quot;マイページ（わたしの森・応援活動）\&quot;]\n    points[\&quot;ポイント詳細\&quot;]\n    gameModal[\&quot;ミニゲーム（モーダル）\&quot;]\n    plantingModal[\&quot;苗木を植える（モーダル）\&quot;]\n    supportModal[\&quot;ポイントで応援（確認モーダル）\&quot;]\n\n    accountDrawer --&gt;|\&quot;ログイン済み\&quot;| mypage\n    accountDrawer --&gt;|\&quot;ポイント\&quot;| points\n    mypage --&gt; points\n    mypage -.-&gt;|\&quot;遊ぶ\&quot;| gameModal\n    mypage -.-&gt;|\&quot;植える\&quot;| plantingModal\n    mypage -.-&gt;|\&quot;応援する\&quot;| supportModal\n    points -.-&gt;|\&quot;遊ぶ\&quot;| gameModal\n\n    classDef drawer fill:#E4F1F3,stroke:#3A7A86,color:#17363D,stroke-width:2px\n    classDef screen fill:#F1F7ED,stroke:#829D78,color:#243C27,stroke-width:2px\n    classDef modal fill:#FFF9EB,stroke:#C69E57,color:#58421D,stroke-width:2px,stroke-dasharray:6 4\n    class accountDrawer drawer\n    class mypage,points screen\n    class gameModal,plantingModal,supportModal modal\n&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="15">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="アカウントドロワー" mermaidId="n:accountDrawer" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#E4F1F3;strokeColor=#3A7A86;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="アカウントドロワー" id="2">
+          <mxCell parent="15" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#E4F1F3;strokeColor=#3A7A86;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="204" x="10" y="142" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="マイページ（わたしの森・応援活動）" mermaidId="n:mypage" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F1F7ED;strokeColor=#829D78;fontColor=#243C27;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="マイページ（わたしの森・応援活動）" link="https://raw.githubusercontent.com/bbudootan/food-loss-graduation-project/f52ba4835a95cc30b189f4ebf034b4fdba230346/docs/design/02_wireframes/01_user/06_mypage/v4/mypage_dashboard.svg" linkTarget="_blank" id="3">
+          <mxCell parent="15" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F1F7ED;strokeColor=#829D78;fontColor=#243C27;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="332" x="360" y="106" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ポイント詳細" mermaidId="n:points" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F1F7ED;strokeColor=#829D78;fontColor=#243C27;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="ポイント詳細" link="https://raw.githubusercontent.com/bbudootan/food-loss-graduation-project/f52ba4835a95cc30b189f4ebf034b4fdba230346/docs/design/02_wireframes/01_user/20_point_detail/v4/point_detail.svg" linkTarget="_blank" id="4">
+          <mxCell parent="15" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F1F7ED;strokeColor=#829D78;fontColor=#243C27;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="156" x="878" y="262" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ミニゲーム（モーダル）" mermaidId="n:gameModal" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#FFF9EB;strokeColor=#C69E57;fontColor=#58421D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;dashed=1;dashPattern=6 4;fixDash=1;" mermaidBaseValue="ミニゲーム（モーダル）" id="5">
+          <mxCell parent="15" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#FFF9EB;strokeColor=#C69E57;fontColor=#58421D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;dashed=1;dashPattern=6 4;fixDash=1;" vertex="1">
+            <mxGeometry height="54" width="236" x="1188" y="122" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="苗木を植える（モーダル）" mermaidId="n:plantingModal" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#FFF9EB;strokeColor=#C69E57;fontColor=#58421D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;dashed=1;dashPattern=6 4;fixDash=1;" mermaidBaseValue="苗木を植える（モーダル）" id="6">
+          <mxCell parent="15" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#FFF9EB;strokeColor=#C69E57;fontColor=#58421D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;dashed=1;dashPattern=6 4;fixDash=1;" vertex="1">
+            <mxGeometry height="54" width="252" x="830" y="54" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ポイントで応援（確認モーダル）" mermaidId="n:supportModal" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#FFF9EB;strokeColor=#C69E57;fontColor=#58421D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;dashed=1;dashPattern=6 4;fixDash=1;" mermaidBaseValue="ポイントで応援（確認モーダル）" id="7">
+          <mxCell parent="15" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#FFF9EB;strokeColor=#C69E57;fontColor=#58421D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;dashed=1;dashPattern=6 4;fixDash=1;" vertex="1">
+            <mxGeometry height="54" width="300" x="806" y="158" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ログイン済み" mermaidId="e:accountDrawer-&gt;mypage#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.11;entryX=0;entryY=0.5;" mermaidBaseValue="ログイン済み" id="8">
+          <mxCell edge="1" parent="15" source="2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.11;entryX=0;entryY=0.5;" target="3">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="287" y="133" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ポイント" mermaidId="e:accountDrawer-&gt;points#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.72;exitY=1;entryX=0;entryY=0.39;" mermaidBaseValue="ポイント" id="9">
+          <mxCell edge="1" parent="15" source="2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.72;exitY=1;entryX=0;entryY=0.39;" target="4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="287" y="273" />
+                <mxPoint x="526" y="273" />
+                <mxPoint x="749" y="273" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:mypage-&gt;points#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.61;exitY=1;entryX=0;entryY=0.57;" mermaidBaseValue="" id="10">
+          <mxCell edge="1" parent="15" source="3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.61;exitY=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="680" y="262" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="遊ぶ" mermaidId="e:mypage-&gt;gameModal#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.65;exitY=0;entryX=0.37;entryY=0;" mermaidBaseValue="遊ぶ" id="11">
+          <mxCell edge="1" parent="15" source="3" style="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.65;exitY=0;entryX=0.37;entryY=0;" target="5">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="749" y="10" />
+                <mxPoint x="956" y="10" />
+                <mxPoint x="1147" y="10" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="植える" mermaidId="e:mypage-&gt;plantingModal#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.85;exitY=0;entryX=0;entryY=0.5;" mermaidBaseValue="植える" id="12">
+          <mxCell edge="1" parent="15" source="3" style="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.85;exitY=0;entryX=0;entryY=0.5;" target="6">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="749" y="81" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="応援する" mermaidId="e:mypage-&gt;supportModal#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.85;exitY=1;entryX=0;entryY=0.5;" mermaidBaseValue="応援する" id="13">
+          <mxCell edge="1" parent="15" source="3" style="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.85;exitY=1;entryX=0;entryY=0.5;" target="7">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="749" y="185" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="遊ぶ" mermaidId="e:points-&gt;gameModal#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.5;entryX=0.37;entryY=1;" mermaidBaseValue="遊ぶ" id="14">
+          <mxCell edge="1" parent="15" source="4" style="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.5;entryX=0.37;entryY=1;" target="5">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1147" y="289" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
