@@ -1,0 +1,49 @@
+<mxfile host="Electron">
+  <diagram name="ウェルカムページ v1" id="welcome-v1">
+    <mxGraphModel dx="2409" dy="931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="840" width="1160" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HJn3LHv7xkghd_3Bbqgm-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="698" width="1040" x="80" y="66" as="geometry" />
+        </mxCell>
+        <mxCell id="bg-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontColor=#777777;" value="背景：淡いイラスト" vertex="1">
+          <mxGeometry height="30" width="500" x="-60" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="logo" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontColor=#000000;fontSize=20;align=center;verticalAlign=middle;" value="ロゴ" vertex="1">
+          <mxGeometry height="65" width="110" x="545" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="brand" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=23;fontStyle=1;fontColor=#000000;" value="JEC Food Rescue" vertex="1">
+          <mxGeometry height="40" width="450" x="375" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="heading" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=30;fontStyle=1;fontColor=#000000;" value="惹句（例：おいしいを、むだにしない）" vertex="1">
+          <mxGeometry height="55" width="600" x="300" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="intro" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;" value="補佐・説明する用キャッチコピー&lt;font face=&quot;Helvetica&quot;&gt;（例：&lt;/font&gt;近くのお店の商品を、おトクに見つけよう）" vertex="1">
+          <mxGeometry height="40" width="810" x="195.5" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="cta" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontColor=#000000;fontSize=21;fontStyle=1;align=center;verticalAlign=middle;" value="商品を探す　→" vertex="1">
+          <mxGeometry height="70" width="245" x="478" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="guest-note" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#555555;" value="ログインなしで閲覧できます" vertex="1">
+          <mxGeometry height="35" width="400" x="400" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="separator" parent="1" style="line;strokeColor=#aaaaaa;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="10" width="380" x="410" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="store" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontColor=#000000;" value="店舗運営者の方 →" vertex="1">
+          <mxGeometry height="45" width="200" x="395" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontColor=#000000;" value="管理者の方 →" vertex="1">
+          <mxGeometry height="45" width="200" x="605" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontColor=#555555;" value="v1.0　© 2026 JEC Food Rescue" vertex="1">
+          <mxGeometry height="40" width="500" x="350" y="805" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
