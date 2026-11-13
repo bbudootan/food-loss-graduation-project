@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34800225/README.md)
 # テーブル定義書 v4（MVP版）
 
 更新日：2026-11-13
@@ -41,8 +40,13 @@ MVP（簡略化版）の範囲に合わせて、テーブルと列を減らし�
 - 状態を表す int の列の意味
   - account.account_status：0=利用可 1=停止 2=退会
   - store.store_status：0=利用可 1=停止 2=退店
-  - orders.order_status：0=受け取り待ち 1=受け取り済み 2=期限切れ
+  - orders.order_status：0=受け取り待ち 1=受け取り済み 2=期限切れ（2に変える処理はMVPでは作らない。DECISIONS D-23）
   - goods_registration_request.request_status：0=依頼中 1=登録済み 2=登録しない
 - 商品名・アレルゲン・保存方法は goods_master、価格・残数・食品期限・締め切りは listing、店舗名・営業時間は store から取ります（商品カードは listing を中心に goods_master と store をつなぎます）
 - store.store_genre・store_image は、店舗情報の画面がMVP対象外なので、ダミーデータで入れてください
 - 店舗カードには距離を出さず、住所（store.address）を表示します
+- orders.pickup_schedule は受け取りの締め切り日時です（閉店時間と、注文内でいちばん早い sale_end の早いほう）。ユーザーは時刻を選びません（DECISIONS D-05）
+
+## 未決のこと
+
+- 今のところありません（P-07 は D-23 として決定）
