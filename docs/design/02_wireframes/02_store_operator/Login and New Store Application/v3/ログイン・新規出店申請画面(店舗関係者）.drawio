@@ -1,0 +1,232 @@
+<mxfile host="Electron">
+  <diagram id="a01" name="a01 システム管理者ログイン">
+    <mxGraphModel dx="-1435" dy="-2609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1040" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-216" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="1235" width="570" x="6509.587706146926" y="6142.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-217" parent="1" screen_id="S01-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;新規出店申請&lt;/font&gt;" variable_name="page_title_text" vertex="1">
+          <mxGeometry height="30" width="130" x="6534.587706146926" y="6232.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-218" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="6549.587706146926" y="6262.299850074963" as="sourcePoint" />
+            <mxPoint x="7029.587706146926" y="6262.299850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-219" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="570" x="6509.587706146926" y="6142.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-220" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="635" width="480" x="6554.587706146926" y="6272.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-221" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗情報&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6554.587706146926" y="6282.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-222" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗名&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="70" x="6563.587706146926" y="6332.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-223" data_name="store_name" form_name="store_name" html_attribute="id" html_identifier="s01_2_store_name_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="store_name_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6568.587706146926" y="6362.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-224" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗住所&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6558.587706146926" y="6412.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-225" data_name="store_address" form_name="store_address" html_attribute="id" html_identifier="s01_2_store_address_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="store_address_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6574.587706146926" y="6442.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-226" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;電話番号&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6568.587706146926" y="6487.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-227" data_name="store_phone_number" form_name="store_phone_number" html_attribute="id" html_identifier="s01_2_store_phone_number_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="store_phone_number_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6574.587706146926" y="6517.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-228" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;担当者名&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6563.587706146926" y="6562.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-229" data_name="contact_name" form_name="contact_name" html_attribute="id" html_identifier="s01_2_contact_name_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_name_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6574.587706146926" y="6590.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-230" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;営業時間&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6568.587706146926" y="6647.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-231" data_name="business_hours" form_name="business_hours" html_attribute="id" html_identifier="s01_2_business_hours_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="business_hours_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6574.587706146926" y="6673.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-232" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗紹介&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="6573.587706146926" y="6727.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-233" data_name="store_description" form_name="store_description" html_attribute="id" html_identifier="s01_2_store_description_textarea" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="store_description_textarea" vertex="1">
+          <mxGeometry height="110" width="431" x="6568.587706146926" y="6752.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-234" data_name="" form_name="" html_attribute="id" html_identifier="s01_2_confirm_store_application_button" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;spacing=1;" value="&lt;div style=&quot;font-size:10px&quot;&gt;申請内容を確認&lt;/div&gt;" variable_name="confirm_store_application_button" vertex="1">
+          <mxGeometry height="40" width="120" x="6553.587706146926" y="7297.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-235" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="692.7" width="570" x="7304.58" y="6517.3" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-236" parent="1" screen_id="S01-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;出店申請の確認&lt;/font&gt;" variable_name="page_title_text" vertex="1">
+          <mxGeometry height="30" width="140" x="7332.587706146926" y="6583.449850074962" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-237" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="7343.587706146926" y="6613.449850074962" as="sourcePoint" />
+            <mxPoint x="7823.587706146926" y="6613.449850074962" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-238" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="570" x="7304.587706146926" y="6517.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-239" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="277.7" width="480" x="7348.58" y="6623.45" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-240" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗情報&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="7540.087706146926" y="6643.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-241" data_name="store_name" form_name="" html_attribute="id" html_identifier="s01_3_store_name_text" parent="1" screen_id="S01-3" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗名：入力値&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;店舗住所：入力値&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;電話番号：入力値&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;担当者名：入力値&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;営業時間：入力値&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;店舗紹介：&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;　　　　入力内容&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" variable_name="store_name_text" vertex="1">
+          <mxGeometry height="160" width="160" x="7382.587706146926" y="6678.449850074962" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-253" data_name="" form_name="" html_attribute="id" html_identifier="s01_3_submit_store_application_button" parent="1" screen_id="S01-3" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;spacing=1;" value="&lt;div style=&quot;font-size:10px&quot;&gt;この内容で申請&lt;br&gt;&lt;/div&gt;" variable_name="submit_store_application_button" vertex="1">
+          <mxGeometry height="40" width="120" x="7445.087706146926" y="7140.299850074964" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-254" data_name="" form_name="" html_attribute="id" html_identifier="s01_3_back_to_store_application_button" parent="1" screen_id="S01-3" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;spacing=1;" value="&lt;div style=&quot;font-size:10px&quot;&gt;入力に戻る&lt;/div&gt;" variable_name="back_to_store_application_button" vertex="1">
+          <mxGeometry height="40" width="120" x="7619.997706146926" y="7140.299850074964" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-255" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="665" width="520" x="8039.997706146926" y="6531.149850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-256" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="520" x="8039.997706146926" y="6531.149850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-257" parent="1" screen_id="S01-4" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;出店申請完了&lt;/font&gt;" variable_name="page_title_text" vertex="1">
+          <mxGeometry height="30" width="130" x="8069.997706146926" y="6606.149850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-258" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8069.997706146926" y="6636.149850074963" as="sourcePoint" />
+            <mxPoint x="8509.997706146925" y="6636.149850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-259" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="130" width="130" x="8234.997706146925" y="6676.149850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-260" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8259.997706146925" y="6746.149850074963" as="sourcePoint" />
+            <mxPoint x="8289.997706146925" y="6766.149850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-261" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="8289.997706146925" y="6766.149850074963" as="sourcePoint" />
+            <mxPoint x="8339.997706146925" y="6716.149850074963" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-262" data_name="completion_message" form_name="" html_attribute="id" html_identifier="s01_4_completion_message_text" parent="1" screen_id="S01-4" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;出店申請を受け付けました&lt;/font&gt;" variable_name="completion_message_text" vertex="1">
+          <mxGeometry height="40" width="260" x="8169.997706146925" y="6826.149850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-263" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;審査完了までお待ちください&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="280" x="8159.997706146925" y="6866.149850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-264" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="320" width="481" x="6554.587706146926" y="6937.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-265" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;承認後のログインに使う情報&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="240" x="6670.087706146926" y="6945.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-266" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;ログイン用メールアドレス&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="6561.587706146926" y="6987.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-267" data_name="contact_email" form_name="contact_email" html_attribute="id" html_identifier="s01_2_contact_email_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_email_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6561.587706146926" y="7017.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-268" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;ログイン用パスワード&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="6561.587706146926" y="7070.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-269" data_name="contact_email" form_name="contact_email" html_attribute="id" html_identifier="s01_2_contact_email_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_email_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6561.587706146926" y="7100.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-270" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;パスワード(確認)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="6556.587706146926" y="7147.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-271" data_name="contact_email" form_name="contact_email" html_attribute="id" html_identifier="s01_2_contact_email_input" parent="1" screen_id="S01-2" style="rounded=0;whiteSpace=wrap;html=1;" value="" variable_name="contact_email_input" vertex="1">
+          <mxGeometry height="40" width="431" x="6561.587706146926" y="7179.299850074963" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-272" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="152" width="481" x="7348.58" y="6925.3" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-273" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;承認後の店舗ログインに使う情報&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="280" x="7445.083913043478" y="6937.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="5yVddBB_TwAb1MP2gWdM-274" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;ログイン用メールアドレス：入力値&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;ログイン用パスワード：入力値&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;パスワード（確認）：入力値&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="300" x="7382.583913043478" y="6975.302608695652" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-4" edge="1" parent="1" source="5yVddBB_TwAb1MP2gWdM-253" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;strokeWidth=7;fillColor=#f8cecc;strokeColor=#b85450;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="7710" y="7290.3" as="sourcePoint" />
+            <mxPoint x="8050" y="7070.3" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;strokeWidth=7;fillColor=#f8cecc;strokeColor=#b85450;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.026;entryY=0.787;entryDx=0;entryDy=0;entryPerimeter=0;" target="5yVddBB_TwAb1MP2gWdM-235" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="6669.59" y="7319.7" as="sourcePoint" />
+            <mxPoint x="7154.59" y="7230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-6" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="860" width="1160" x="5140" y="6390" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-7" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;fontSize=20;align=center;verticalAlign=middle;" value="ロゴ" vertex="1">
+          <mxGeometry height="65" width="110" x="5665" y="6470" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-8" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#000000;" value="JEC Food Rescue" vertex="1">
+          <mxGeometry height="40" width="400" x="5520" y="6545" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-9" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=30;fontStyle=1;fontColor=#000000;" value="店舗運営者の方へ" vertex="1">
+          <mxGeometry height="50" width="600" x="5420" y="6620" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-10" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=18;fontColor=#444444;" value="ご利用方法をお選びください。" vertex="1">
+          <mxGeometry height="35" width="500" x="5470" y="6685" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-11" parent="1" style="rounded=1;arcSize=5;fillColor=none;strokeColor=#777777;" value="" vertex="1">
+          <mxGeometry height="225" width="340" x="5355" y="6760" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-12" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=21;fontStyle=1;fontColor=#000000;" value="はじめての方" vertex="1">
+          <mxGeometry height="40" width="280" x="5385" y="6785" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-13" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontColor=#555555;" value="新規出店のお申し込みはこちら" vertex="1">
+          <mxGeometry height="35" width="290" x="5380" y="6836" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-14" parent="1" style="rounded=1;arcSize=8;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontSize=17;fontColor=#000000;align=center;verticalAlign=middle;" value="新規出店へ進む →" vertex="1">
+          <mxGeometry height="55" width="220" x="5415" y="6900" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-15" parent="1" style="rounded=1;arcSize=5;fillColor=none;strokeColor=#777777;" value="" vertex="1">
+          <mxGeometry height="225" width="340" x="5745" y="6760" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-16" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=21;fontStyle=1;fontColor=#000000;" value="アカウントをお持ちの方" vertex="1">
+          <mxGeometry height="40" width="290" x="5770" y="6785" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-17" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontColor=#555555;" value="店舗管理画面へログインします" vertex="1">
+          <mxGeometry height="35" width="290" x="5770" y="6836" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-18" parent="1" style="rounded=1;arcSize=8;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontSize=17;fontColor=#000000;align=center;verticalAlign=middle;" value="ログイン →" vertex="1">
+          <mxGeometry height="55" width="220" x="5805" y="6900" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-19" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontColor=#000000;" value="← 最初の画面に戻る" vertex="1">
+          <mxGeometry height="40" width="360" x="5540" y="7050" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-20" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontColor=#555555;" value="v1.0　© 2026 JEC Food Rescue" vertex="1">
+          <mxGeometry height="40" width="500" x="5470" y="7175" as="geometry" />
+        </mxCell>
+        <mxCell id="rQE1E-fdr-_hTySIlOPP-21" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;strokeWidth=7;fillColor=#f8cecc;strokeColor=#b85450;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="5610" y="6931" as="sourcePoint" />
+            <mxPoint x="6500" y="6880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

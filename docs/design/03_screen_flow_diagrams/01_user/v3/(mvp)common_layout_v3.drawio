@@ -1,0 +1,171 @@
+<mxfile host="Electron">
+  <diagram id="XQij3ltkrF13Is5fngWv" name="第 1 页">
+    <mxGraphModel dx="1494" dy="1145" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;%% JEC Food Rescue 共通レイアウトの主な導線（企業レビュー補足用）\n%% 根拠: prototype/user-frontend-v1 / commit e06f1460b204ded0a00f5098023dcc2abb162cc1\n%% 複数の画面をまとめたノードは、個別ページの一覧を表します。\n%% 通知・カートは、未ログイン時に各ドロワーを開いてログイン／新規登録を案内します。\n%% 会員機能とゲーム画面・モーダルには、詳細設計や実装が未完了のものがあります。\n%%{init: {\&quot;theme\&quot;:\&quot;base\&quot;, \&quot;flowchart\&quot;:{\&quot;curve\&quot;:\&quot;basis\&quot;,\&quot;nodeSpacing\&quot;:35,\&quot;rankSpacing\&quot;:65}, \&quot;themeVariables\&quot;:{\&quot;fontFamily\&quot;:\&quot;sans-serif\&quot;,\&quot;fontSize\&quot;:\&quot;18px\&quot;,\&quot;primaryTextColor\&quot;:\&quot;#19333a\&quot;,\&quot;lineColor\&quot;:\&quot;#567079\&quot;}}}%%\nflowchart LR\n    layout[\&quot;共通レイアウト\&quot;]\n    nav[\&quot;ヘッダー中央\&quot;]\n    homepage[\&quot;ホーム\&quot;]\n    map[\&quot;地図で探そう\&quot;]\n    productList[\&quot;商品一覧\&quot;]\n    storeList[\&quot;店舗一覧\&quot;]\n    noticeDrawer[\&quot;通知ドロワー\&quot;]\n    noticeList[\&quot;通知一覧\&quot;]\n    cartDrawer[\&quot;カートドロワー\&quot;]\n    cart[\&quot;カート全体\&quot;]\n    checkout[\&quot;注文確認\&quot;]\n    accountDrawer[\&quot;アカウントドロワー\&quot;]\n    guest[\&quot;ログイン・新規登録\&quot;]\n    member[\&quot;マイページ・お気に入り・注文履歴・ポイント・設定\&quot;]\n    support[\&quot;ガイド・FAQ・お問い合わせ\&quot;]\n    footer[\&quot;共通フッター\&quot;]\n    legal[\&quot;利用規約・プライバシーポリシー・運営について\&quot;]\n\n    layout --&gt; nav\n    nav --&gt; homepage\n    nav --&gt; map\n    nav --&gt; productList\n    nav --&gt; storeList\n    layout --&gt; noticeDrawer\n    layout --&gt; cartDrawer\n    layout --&gt; accountDrawer\n    noticeDrawer --&gt;|\&quot;ログイン済み\&quot;| noticeList\n    noticeDrawer -.-&gt;|\&quot;未ログイン\&quot;| guest\n    cartDrawer --&gt;|\&quot;ログイン済み\&quot;| cart\n    cartDrawer --&gt;|\&quot;ログイン済み・直接注文\&quot;| checkout\n    cartDrawer -.-&gt;|\&quot;未ログイン\&quot;| guest\n    accountDrawer --&gt;|\&quot;未ログイン\&quot;| guest\n    accountDrawer --&gt;|\&quot;ログイン済み\&quot;| member\n    accountDrawer --&gt;|\&quot;共通\&quot;| support\n    layout --&gt; footer\n    footer --&gt; legal\n\n    classDef frame fill:#F3F6F6,stroke:#A5B5B7,color:#203C41,stroke-width:2px\n    classDef drawer fill:#E4F1F3,stroke:#3A7A86,color:#17363D,stroke-width:2px\n    classDef screen fill:#FFFFFF,stroke:#849B9E,color:#17363D,stroke-width:2px\n    classDef member fill:#F1F7ED,stroke:#829D78,color:#243C27,stroke-width:2px\n    class layout,nav,footer frame\n    class noticeDrawer,cartDrawer,accountDrawer drawer\n    class homepage,map,productList,storeList,noticeList,cart,checkout,guest,support,legal screen\n    class member member\n&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="37">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="共通レイアウト" mermaidId="n:layout" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F3F6F6;strokeColor=#A5B5B7;fontColor=#203C41;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="共通レイアウト" id="2">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F3F6F6;strokeColor=#A5B5B7;fontColor=#203C41;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="172" x="10" y="641" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ヘッダー中央" mermaidId="n:nav" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F3F6F6;strokeColor=#A5B5B7;fontColor=#203C41;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="ヘッダー中央" id="3">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F3F6F6;strokeColor=#A5B5B7;fontColor=#203C41;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="156" x="250" y="400" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ホーム" mermaidId="n:homepage" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="ホーム" id="4">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="108" x="600" y="210" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="商品一覧" mermaidId="n:productList" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="商品一覧" link="https://raw.githubusercontent.com/bbudootan/food-loss-graduation-project/e06f1460b204ded0a00f5098023dcc2abb162cc1/docs/design/02_wireframes/01_user/02_product_listing/v4/grid_view.svg" linkTarget="_blank" id="6">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="124" x="600" y="310" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="店舗一覧" mermaidId="n:storeList" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="店舗一覧" link="https://raw.githubusercontent.com/bbudootan/food-loss-graduation-project/e06f1460b204ded0a00f5098023dcc2abb162cc1/docs/design/02_wireframes/01_user/03_store_listing/v4/grid_view.svg" linkTarget="_blank" id="7">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="124" x="600" y="400" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="カートドロワー" mermaidId="n:cartDrawer" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#E4F1F3;strokeColor=#3A7A86;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="カートドロワー" id="10">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#E4F1F3;strokeColor=#3A7A86;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="172" x="248" y="641" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="カート全体" mermaidId="n:cart" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="カート全体" link="https://github.com/bbudootan/food-loss-graduation-project/tree/prototype/user-frontend-v1/docs/design/02_wireframes/01_user/10_cart_checkout/v3" linkTarget="_blank" id="11">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="140" x="814" y="641" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="注文確認" mermaidId="n:checkout" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="注文確認" link="https://github.com/bbudootan/food-loss-graduation-project/tree/prototype/user-frontend-v1/docs/design/02_wireframes/01_user/10_cart_checkout/v3" linkTarget="_blank" id="12">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="140" x="822" y="745" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="アカウントドロワー" mermaidId="n:accountDrawer" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#E4F1F3;strokeColor=#3A7A86;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="アカウントドロワー" id="13">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#E4F1F3;strokeColor=#3A7A86;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="204" x="232" y="849" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ログイン・新規登録" mermaidId="n:guest" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="ログイン・新規登録" id="14">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="204" x="640" y="490" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="注文履歴" mermaidId="n:member" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F1F7ED;strokeColor=#829D78;fontColor=#243C27;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="マイページ・お気に入り・注文履歴・ポイント・設定" id="15">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=default;strokeColor=#849B9E;fontColor=#17363D;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;align=center;verticalAlign=middle;" vertex="1">
+            <mxGeometry height="54" width="140" x="822" y="849" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="共通フッター（MVP段階はクリック不可）" mermaidId="n:footer" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F3F6F6;strokeColor=#A5B5B7;fontColor=#203C41;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;" mermaidBaseValue="共通フッター" id="17">
+          <mxCell parent="37" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#F3F6F6;strokeColor=#A5B5B7;fontColor=#203C41;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontSize=16;rounded=1;roundedPerimeter=1;" vertex="1">
+            <mxGeometry height="54" width="314" x="256" y="1057" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:layout-&gt;nav#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.53;exitY=0;entryX=0;entryY=0.5;" mermaidBaseValue="" id="19">
+          <mxCell edge="1" parent="37" source="2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.53;exitY=0;entryX=0;entryY=0.5;rounded=1;" target="3">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:nav-&gt;homepage#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.75;exitY=0;entryX=0;entryY=0.5;" mermaidBaseValue="" id="20">
+          <mxCell edge="1" parent="37" source="3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0;entryX=0;entryY=0.5;rounded=1;exitDx=0;exitDy=0;" target="4">
+            <mxGeometry relative="1" x="0.0536" y="-4.63" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:nav-&gt;productList#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.89;entryX=0;entryY=0.5;" mermaidBaseValue="" id="22">
+          <mxCell edge="1" parent="37" source="3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);entryX=0;entryY=0.5;rounded=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="6">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+              <mxPoint x="411.73" y="187" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:nav-&gt;storeList#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.73;exitY=1;entryX=0;entryY=0.5;" mermaidBaseValue="" id="23">
+          <mxCell edge="1" parent="37" source="3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.75;entryX=0;entryY=0.5;rounded=1;exitDx=0;exitDy=0;" target="7">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:layout-&gt;cartDrawer#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.5;entryX=0;entryY=0.5;" mermaidBaseValue="" id="25">
+          <mxCell edge="1" parent="37" source="2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=1;" target="10">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:layout-&gt;accountDrawer#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.58;exitY=1;entryX=0;entryY=0.5;" mermaidBaseValue="" id="26">
+          <mxCell edge="1" parent="37" source="2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.58;exitY=1;entryX=0;entryY=0.5;rounded=1;" target="13">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="207" y="876" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ログイン済み" mermaidId="e:cartDrawer-&gt;cart#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.5;entryX=0;entryY=0.5;" mermaidBaseValue="ログイン済み" id="29">
+          <mxCell edge="1" parent="37" source="10" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=1;" target="11">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ログイン済み・直接注文" mermaidId="e:cartDrawer-&gt;checkout#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.83;exitY=1;entryX=0;entryY=0.5;" mermaidBaseValue="ログイン済み・直接注文" id="30">
+          <mxCell edge="1" parent="37" source="10" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.83;exitY=1;entryX=0;entryY=0.5;rounded=1;" target="12">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="549" y="772" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="未ログイン" mermaidId="e:cartDrawer-&gt;guest#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.81;exitY=0;entryX=0;entryY=0.5;" mermaidBaseValue="未ログイン" id="31">
+          <mxCell edge="1" parent="37" source="10" style="curved=1;dashed=1;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#b85450;html=1;fontSize=16;labelBackgroundColor=light-dark(#FFCCCC,#2A2A2A8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.81;exitY=0;entryX=0;entryY=0.5;rounded=1;align=center;verticalAlign=middle;fillColor=#f8cecc;" target="14">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="549" y="557" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="未ログイン" mermaidId="e:accountDrawer-&gt;guest#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.61;exitY=0;entryX=0;entryY=0.83;" mermaidBaseValue="未ログイン" id="32">
+          <mxCell edge="1" parent="37" source="13" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#b85450;html=1;fontSize=16;labelBackgroundColor=light-dark(#FFCCCC,#2A2A2A8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=0.61;exitY=0;entryX=0;entryY=0.83;dashed=1;rounded=1;fillColor=#f8cecc;" target="14">
+            <mxGeometry relative="1" x="0.1794" y="-8" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="549" y="616" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="ログイン済み" mermaidId="e:accountDrawer-&gt;member#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.5;entryX=0;entryY=0.5;" mermaidBaseValue="ログイン済み" id="33">
+          <mxCell edge="1" parent="37" source="13" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.5;entryX=0;entryY=0.5;rounded=1;" target="15">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:layout-&gt;footer#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.54;exitY=1;entryX=0;entryY=0.5;" mermaidBaseValue="" id="35">
+          <mxCell edge="1" parent="37" source="2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=light-dark(#333333,#cccccc);exitX=0.54;exitY=1;entryX=0;entryY=0.5;rounded=1;" target="17">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="207" y="1084" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

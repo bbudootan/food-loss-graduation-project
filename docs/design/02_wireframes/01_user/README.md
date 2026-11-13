@@ -1,5 +1,9 @@
 # ユーザー向けワイヤーフレーム
 
+作成日：2026-10-18
+
+最後更新日：2026-11-13
+
 一般利用者向けの画面構成・機能を、ASCIIテキストとSVGでまとめています。
 
 ## 画面一覧
@@ -7,7 +11,7 @@
 | 画面 | 保存済みのバージョン |
 |---|---|
 | 共通レイアウト・ナビゲーション | [v2](./00_common/v2/README.md) / [v3](./00_common/v3/README.md) / [v4](./00_common/v4/README.md) |
-| ホームページ | [v1](./01_homepage/v1/README.md) / [v2](./01_homepage/v2/README.md) / [v3](./01_homepage/v3/README.md) / [v4](./01_homepage/v4/README.md) |
+| ホームページ | [v1](./01_homepage/v1/README.md) / [v2](./01_homepage/v2/README.md) / [v3](./01_homepage/v3/README.md) / [v4](./01_homepage/v4/README.md) / [v5](./01_homepage/v5/README.md) |
 | 商品一覧 | [v3](./02_product_listing/v3/README.md) / [v4](./02_product_listing/v4/README.md) |
 | 店舗一覧 | [v3](./03_store_listing/v3/README.md) / [v4](./03_store_listing/v4/README.md) |
 | 商品詳細 | [v3](./04_product_detail/v3/README.md) |
