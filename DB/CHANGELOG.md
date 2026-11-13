@@ -1,7 +1,75 @@
+[CHANGELOG.md](https://github.com/user-attachments/files/34786011/CHANGELOG.md)
 # CHANGELOG（テーブル定義書の変更記録）
 
 テーブル定義書の変更を、テーブル・カラム単位で記録します。
 決めたルールの詳細は [DECISIONS.md](DECISIONS.md) を見てください。
+
+## v4（2026-11-13）
+
+v3 からの変更です。MVP（簡略化版）の範囲に合わせて、テーブルと列を減らしました。
+
+### テーブル
+
+| 種類 | テーブル | 理由 |
+|---|---|---|
+| 削除 | card（カード） | デモ決済にしたので、カード情報を保存しない（D-17） |
+| 削除 | review（レビュー）、review_report（レビュー通報） | MVP対象外（D-16） |
+| 削除 | favorite_goods（お気に入り商品）、favorite_store（お気に入り店舗） | MVP対象外（D-16） |
+| 削除 | faq（FAQ）、inquiry（お問い合わせ） | MVP対象外（D-16） |
+| 削除 | delete_store_application（店舗削除申請） | MVP対象外（D-16） |
+| 削除 | point_history（ポイント履歴）、seedling_history（苗の履歴） | ポイント・すごろく機能をやめた（D-16） |
+
+残したテーブルは11個です（account、store、category、goods_master、listing、cart、orders、order_detail、open_store_application、goods_registration_request、goods_registration_request_photo）。
+
+### アカウントテーブル（account）
+
+| 種類 | カラム | 変更前 | 変更後 | 理由 |
+|---|---|---|---|---|
+| 削除 | point_balance | int（ポイント保有数） | なし | ポイント機能をやめた（D-16） |
+| 削除 | seedling_balance | int（苗保有数） | なし | すごろく・苗の機能をやめた（D-16） |
+
+### 店舗テーブル（store）
+
+| 種類 | カラム | 変更前 | 変更後 | 理由 |
+|---|---|---|---|---|
+| 削除 | closed_days | nvarchar(30)（定休日） | なし | 定休日はなく、毎日営業する前提にした（D-15） |
+
+### 商品マスターテーブル（goods_master）
+
+| 種類 | カラム | 変更前 | 変更後 | 理由 |
+|---|---|---|---|---|
+| 追加 | storage_method | なし | nvarchar(50)、NULL可（保存方法） | 商品カードの裏面に保存方法を表示するため（D-18） |
+
+### 出品テーブル（listing）
+
+| 種類 | カラム | 変更前 | 変更後 | 理由 |
+|---|---|---|---|---|
+| 削除 | listing_description | nvarchar(300)（出品説明） | なし | 出品ごとの説明は使わない |
+
+### 注文テーブル（orders）
+
+| 種類 | カラム | 変更前 | 変更後 | 理由 |
+|---|---|---|---|---|
+| 削除 | cancel_date | datetime（取り消し日時） | なし | 注文の取り消しはしない（D-14） |
+| 削除 | cancel_reason | nvarchar(200)（取り消し理由） | なし | 同上 |
+| 削除 | used_point | int（使用ポイント） | なし | ポイント機能をやめた（D-16） |
+| 変更 | order_status | 0=受け取り待ち 1=受け取り済み 2=期限切れ 3=取り消し | 0=受け取り待ち 1=受け取り済み 2=期限切れ | 注文の取り消しはしない（D-14） |
+| 変更 | total_amount（説明） | ポイント値引き後の支払金額 | 注文の合計金額（販売価格×数量の合計） | ポイント値引きがなくなった |
+
+## v3（2026-11-09）
+
+v2 からの変更です（細かい修正）。
+
+### アカウントテーブル（account）
+
+| 種類 | カラム | 変更前 | 変更後 | 理由 |
+|---|---|---|---|---|
+| 変更 | email（DB制約） | なし | UNIQUE | ログインに使うので重複させない |
+
+### そのほか
+
+- account、goods_master、orders、review_report：DB制約の `IDENTITY(1,1）` の全角かっこを半角に修正
+- goods_registration_request：request_status の NOT NULL 欄に入っていた全角スペースを削除
 
 ## v2（2026-11-03）
 
