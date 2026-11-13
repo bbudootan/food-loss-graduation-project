@@ -1,6 +1,10 @@
 # Wireframes
 
-JEC Food Rescue の画面構成・機能を整理したワイヤーフレームです。
+作成日：2026-10-16
+
+最後更新日：2026-11-13
+
+JEC Food Rescueの画面構成・機能を整理したワイヤーフレームです。
 
 ## ディレクトリ構成
 
@@ -8,6 +12,7 @@ JEC Food Rescue の画面構成・機能を整理したワイヤーフレーム�
 
 | 対象 | 主な保存形式 |
 |---|---|
+| [00_welcome_page：ウェルカムページ](./00_welcome_page/) | ASCIIテキスト・SVG |
 | [01_user：一般利用者](./01_user/) | ASCIIテキスト・SVG |
 | [02_store_operator：店舗運営者](./02_store_operator/) | draw.io・PNG |
 | [03_system_admin：システム管理者](./03_system_admin/) | draw.io・PNG |
