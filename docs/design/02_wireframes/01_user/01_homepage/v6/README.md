@@ -14,4 +14,4 @@
 ### 関連
 
 1. [受取時間についての議論](https://github.com/bbudootan/food-loss-graduation-project/issues/6#issuecomment-6852560583)
-2. [業務ルール（D-05・D-16）](https://github.com/bbudootan/food-loss-graduation-project/blob/main/DB/DECISIONS.md)
+2. [業務ルール（D-05・D-16）](https://github.com/bbudootan/food-loss-graduation-project/blob/main/database/DECISIONS.md)
