@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/34786028/README.md)
+[README.md](https://github.com/user-attachments/files/34800225/README.md)
 # テーブル定義書 v4（MVP版）
 
 更新日：2026-11-13
@@ -18,7 +18,7 @@ MVP（簡略化版）の範囲に合わせて、テーブルと列を減らし�
 | orders | 注文 | 注文確認・デモ決済、注文履歴、注文管理、受け取り |
 | order_detail | 注文明細 | 注文詳細、注文管理 |
 | open_store_application | 出店申請 | 新規出店申請、新規出店申請の管理 |
-| goods_registration_request | 商品登録依頼 | 商品登録依頼（店舗・管理者） |
+| goods_registration_request | 商品登録依頼 | 商品登録依頼（店舗は写真を送るだけ・管理者） |
 | goods_registration_request_photo | 商品登録依頼写真 | 商品登録依頼（写真で依頼） |
 
 ## v3からのおもな変更
@@ -31,6 +31,7 @@ MVP（簡略化版）の範囲に合わせて、テーブルと列を減らし�
   - orders：cancel_date、cancel_reason、used_point
 - orders.order_status から「3=取り消し」を削除した（注文の取り消しはしない）
 - goods_master に storage_method（保存方法）を追加した（商品カードの裏面に表示する）
+- 商品登録依頼は写真だけにした。goods_registration_request から request_type・goods_name・barcode・unit_weight・correction_reason を削除し、request_status を「0=依頼中 1=登録済み 2=登録しない」にした
 
 ## ダミーデータ（JSON）を作るときのメモ
 
@@ -41,10 +42,11 @@ MVP（簡略化版）の範囲に合わせて、テーブルと列を減らし�
   - account.account_status：0=利用可 1=停止 2=退会
   - store.store_status：0=利用可 1=停止 2=退店
   - orders.order_status：0=受け取り待ち 1=受け取り済み 2=期限切れ
+  - goods_registration_request.request_status：0=依頼中 1=登録済み 2=登録しない
 - 商品名・アレルゲン・保存方法は goods_master、価格・残数・食品期限・締め切りは listing、店舗名・営業時間は store から取ります（商品カードは listing を中心に goods_master と store をつなぎます）
 - store.store_genre・store_image は、店舗情報の画面がMVP対象外なので、ダミーデータで入れてください
+- 店舗カードには距離を出さず、住所（store.address）を表示します
 
 ## 未決のこと
 
-- 商品登録依頼を写真だけで受け付けるか（手入力もあるか）。決まったら、商品登録依頼の2テーブルを直すかもしれません
-- 店舗カードの「距離」を表示するか。表示する場合は、store に緯度・経度の列が必要です
+- 注文状態を「2=期限切れ」に変える処理を、MVPで作るか（DECISIONS P-07）
