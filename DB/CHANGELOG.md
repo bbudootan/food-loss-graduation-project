@@ -1,4 +1,4 @@
-[CHANGELOG.md](https://github.com/user-attachments/files/34786011/CHANGELOG.md)
+[CHANGELOG.md](https://github.com/user-attachments/files/34800239/CHANGELOG.md)
 # CHANGELOG（テーブル定義書の変更記録）
 
 テーブル定義書の変更を、テーブル・カラム単位で記録します。
@@ -55,6 +55,17 @@ v3 からの変更です。MVP（簡略化版）の範囲に合わせて、テ�
 | 削除 | used_point | int（使用ポイント） | なし | ポイント機能をやめた（D-16） |
 | 変更 | order_status | 0=受け取り待ち 1=受け取り済み 2=期限切れ 3=取り消し | 0=受け取り待ち 1=受け取り済み 2=期限切れ | 注文の取り消しはしない（D-14） |
 | 変更 | total_amount（説明） | ポイント値引き後の支払金額 | 注文の合計金額（販売価格×数量の合計） | ポイント値引きがなくなった |
+
+### 商品登録依頼テーブル（goods_registration_request）
+
+| 種類 | カラム | 変更前 | 変更後 | 理由 |
+|---|---|---|---|---|
+| 削除 | request_type | 0=写真で依頼 1=手入力で依頼 | なし | 写真だけで依頼するため（D-21） |
+| 削除 | goods_name | nvarchar(200)（商品名） | なし | 同上 |
+| 削除 | barcode | varchar(13)（バーコード） | なし | 同上 |
+| 削除 | unit_weight | int（容量） | なし | 同上 |
+| 削除 | correction_reason | nvarchar(300)（修正理由） | なし | 差し戻しはしないため（D-21） |
+| 変更 | request_status | 0=依頼中 1=登録済み 2=不備あり（再提出待ち） | 0=依頼中 1=登録済み 2=登録しない | 同上 |
 
 ## v3（2026-11-09）
 
