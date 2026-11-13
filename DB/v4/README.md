@@ -46,7 +46,3 @@ MVP（簡略化版）の範囲に合わせて、テーブルと列を減らし�
 - 商品名・アレルゲン・保存方法は goods_master、価格・残数・食品期限・締め切りは listing、店舗名・営業時間は store から取ります（商品カードは listing を中心に goods_master と store をつなぎます）
 - store.store_genre・store_image は、店舗情報の画面がMVP対象外なので、ダミーデータで入れてください
 - 店舗カードには距離を出さず、住所（store.address）を表示します
-
-## 未決のこと
-
-- 注文状態を「2=期限切れ」に変える処理を、MVPで作るか（DECISIONS P-07）
