@@ -6,7 +6,7 @@
 
 MVPの範囲に合わせて、システム管理者側の画面遷移図を直しました。
 
-![システム管理者 MVP v2](./v2/(mvp)system_admin_flow_v2.png)
+![…](./(mvp)system_admin_flow_v2.drawio.png)
 
 
 ## MVPで作る画面
