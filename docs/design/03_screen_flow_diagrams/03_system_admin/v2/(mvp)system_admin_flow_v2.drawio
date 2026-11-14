@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="システム管理者 MVP" id="0">
+    <mxGraphModel dx="2438" dy="1340" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="W" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ウェルカムページ&lt;br&gt;（共通）" vertex="1">
+          <mxGeometry height="60" width="180" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ログイン画面&lt;br&gt;（共通 login.php）" vertex="1">
+          <mxGeometry height="60" width="180" x="120" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="AM" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="管理者メイン画面" vertex="1">
+          <mxGeometry height="60" width="180" x="120" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="ST" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="店舗管理画面" vertex="1">
+          <mxGeometry height="60" width="180" x="480" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="AP" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="出店申請の審査画面" vertex="1">
+          <mxGeometry height="60" width="180" x="860" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="GM" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="商品マスター画面" vertex="1">
+          <mxGeometry height="60" width="180" x="480" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="GE" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="商品マスターの&lt;br&gt;編集画面" vertex="1">
+          <mxGeometry height="60" width="180" x="860" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="RQ" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="商品登録依頼画面" vertex="1">
+          <mxGeometry height="60" width="180" x="480" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="RC" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="依頼の写真の確認画面" vertex="1">
+          <mxGeometry height="60" width="180" x="860" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="RG" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="商品マスター登録画面" vertex="1">
+          <mxGeometry height="60" width="180" x="1240" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="W" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="L" value="「管理者の方」&lt;br&gt;をクリック">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="L" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="AM" value="「ログイン」ボタンをクリック&lt;br&gt;（管理者のアカウント）">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="AM" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="ST" value="サイドバーの&lt;br&gt;リンク">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="AM" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="GM" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="AM" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="RQ" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="ST" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="AP" value="「申請を確認」／「承認する」・&lt;br&gt;「非承認」・「店舗管理画面へ」">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="GM" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="GE" value="「編集」／「確認して登録」・&lt;br&gt;「無効化」・「一覧へ」">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="RQ" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="RC" value="「詳細」／「一覧へ」・&lt;br&gt;「登録しない」ボタンをクリック">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="RC" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="RG" value="「商品マスターに登録」／&lt;br&gt;「戻る」ボタンをクリック">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="RG" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="RQ" value="「確認して登録」ボタンをクリック">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1330" y="670" />
+              <mxPoint x="570" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="AM" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="W" value="ログアウト">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="490" />
+              <mxPoint x="60" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=14;fontStyle=1;whiteSpace=wrap;" value="画面遷移図（システム管理者）ログイン後の行き先はアカウントの役割（account_type）で決まる。&lt;div&gt;&amp;nbsp;※写真を見て手で登録し、登録できない依頼は差し戻さず「登録しない」にする&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="700" x="120" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
