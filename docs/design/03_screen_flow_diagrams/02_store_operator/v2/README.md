@@ -1,5 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34842930/README.md)
-
 # 店舗運営者側 MVP 画面遷移図
 
 作成日：2026-11-14
