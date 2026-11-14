@@ -1,151 +1,84 @@
 <mxfile host="app.diagrams.net">
   <diagram name="店舗関係者 MVP" id="0">
-    <mxGraphModel dx="2318" dy="1274" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1400" math="0" shadow="0">
+    <mxGraphModel dx="2946" dy="1727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1400" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="W" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ウェルカムページ&lt;br&gt;（共通）" vertex="1">
-          <mxGeometry height="60" width="180" x="120" y="80" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ウェルカムページ&lt;br&gt;（共通）" vertex="1">
+          <mxGeometry height="60" width="180" x="863.4827586206898" y="560.6206896551726" as="geometry" />
         </mxCell>
-        <mxCell id="E" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="店舗運営者の入口画面&lt;br&gt;（新規出店・ログイン）" vertex="1">
-          <mxGeometry height="60" width="180" x="120" y="240" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ログイン画面&lt;br&gt;（共通 login.php）" vertex="1">
+          <mxGeometry height="60" width="180" x="863.4827586206898" y="740.6206896551726" as="geometry" />
         </mxCell>
-        <mxCell id="A1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="新規出店申請画面" vertex="1">
-          <mxGeometry height="60" width="180" x="480" y="240" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="管理者メイン画面" vertex="1">
+          <mxGeometry height="60" width="180" x="863.4827586206898" y="940.6206896551726" as="geometry" />
         </mxCell>
-        <mxCell id="A2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="出店申請の確認画面" vertex="1">
-          <mxGeometry height="60" width="180" x="860" y="240" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="店舗管理画面" vertex="1">
+          <mxGeometry height="60" width="180" x="1223.4827586206898" y="800.6206896551726" as="geometry" />
         </mxCell>
-        <mxCell id="A3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="出店申請完了画面" vertex="1">
-          <mxGeometry height="60" width="180" x="1240" y="240" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-46" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="出店申請の審査画面" vertex="1">
+          <mxGeometry height="60" width="180" x="1603.4827586206898" y="800.6206896551726" as="geometry" />
         </mxCell>
-        <mxCell id="L" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ログイン画面&lt;br&gt;（共通 login.php）" vertex="1">
-          <mxGeometry height="60" width="180" x="120" y="420" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="商品マスター画面" vertex="1">
+          <mxGeometry height="60" width="180" x="1223.4827586206898" y="980.6206896551726" as="geometry" />
         </mxCell>
-        <mxCell id="M" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="店舗関係者メイン画面" vertex="1">
-          <mxGeometry height="60" width="180" x="120" y="780" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="商品マスターの&lt;br&gt;編集画面" vertex="1">
+          <mxGeometry height="60" width="180" x="1603.4827586206898" y="980.6206896551726" as="geometry" />
         </mxCell>
-        <mxCell id="O1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="注文管理画面" vertex="1">
-          <mxGeometry height="60" width="180" x="480" y="540" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-49" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="商品登録依頼画面" vertex="1">
+          <mxGeometry height="60" width="180" x="1223.4827586206898" y="1200.6206896551726" as="geometry" />
         </mxCell>
-        <mxCell id="O2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="注文詳細画面" vertex="1">
-          <mxGeometry height="60" width="180" x="860" y="540" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="依頼の写真の確認画面" vertex="1">
+          <mxGeometry height="60" width="180" x="1603.4827586206898" y="1200.6206896551726" as="geometry" />
         </mxCell>
-        <mxCell id="P1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="受け取り画面" vertex="1">
-          <mxGeometry height="60" width="180" x="480" y="700" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="商品マスター登録画面" vertex="1">
+          <mxGeometry height="60" width="180" x="1983.4827586206898" y="1200.6206896551726" as="geometry" />
         </mxCell>
-        <mxCell id="P2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="注文詳細画面&lt;br&gt;（受け取り）" vertex="1">
-          <mxGeometry height="60" width="180" x="860" y="700" as="geometry" />
-        </mxCell>
-        <mxCell id="P3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="受け取り完了画面" vertex="1">
-          <mxGeometry height="60" width="180" x="1240" y="700" as="geometry" />
-        </mxCell>
-        <mxCell id="S1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="出品・在庫画面" vertex="1">
-          <mxGeometry height="60" width="180" x="480" y="920" as="geometry" />
-        </mxCell>
-        <mxCell id="S2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="商品検索画面" vertex="1">
-          <mxGeometry height="60" width="180" x="860" y="880" as="geometry" />
-        </mxCell>
-        <mxCell id="S3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="出品設定画面" vertex="1">
-          <mxGeometry height="60" width="180" x="1240" y="880" as="geometry" />
-        </mxCell>
-        <mxCell id="S4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="出品編集画面" vertex="1">
-          <mxGeometry height="60" width="180" x="860" y="1000" as="geometry" />
-        </mxCell>
-        <mxCell id="S5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="在庫調整画面" vertex="1">
-          <mxGeometry height="60" width="180" x="1240" y="1000" as="geometry" />
-        </mxCell>
-        <mxCell id="R1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" value="商品登録の依頼画面" vertex="1">
-          <mxGeometry height="60" width="180" x="480" y="1180" as="geometry" />
-        </mxCell>
-        <mxCell id="e0" edge="1" parent="1" source="W" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="E" value="「店舗運営者の方」&lt;br&gt;をクリック">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-52" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-42" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="RMOxsJ6nVRq_UkuNk-NA-43" value="「管理者の方」&lt;br&gt;をクリック">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="E" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="A1" value="「新規出店の申請」&lt;br&gt;ボタンをクリック">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-53" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-43" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="RMOxsJ6nVRq_UkuNk-NA-44" value="「ログイン」ボタンをクリック&lt;br&gt;（管理者のアカウント）">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" edge="1" parent="1" source="A1" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="A2" value="「申請内容を確認」／&lt;br&gt;「入力に戻る」">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-54" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-44" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="RMOxsJ6nVRq_UkuNk-NA-45" value="サイドバーの&lt;br&gt;リンク">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" edge="1" parent="1" source="A2" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="A3" value="「この内容で申請」&lt;br&gt;ボタンをクリック">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-55" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-44" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="RMOxsJ6nVRq_UkuNk-NA-47" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" edge="1" parent="1" source="E" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="L" value="「ログイン」&lt;br&gt;ボタンをクリック">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-56" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-44" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="RMOxsJ6nVRq_UkuNk-NA-49" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e5" edge="1" parent="1" source="L" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="M" value="「ログイン」ボタンをクリック&lt;br&gt;（店舗のアカウント）">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-57" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-45" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="RMOxsJ6nVRq_UkuNk-NA-46" value="「申請を確認」／「承認する」・&lt;br&gt;「非承認」・「店舗管理画面へ」">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e6" edge="1" parent="1" source="M" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="O1" value="サイドバーの&lt;br&gt;リンク">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-58" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-47" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="RMOxsJ6nVRq_UkuNk-NA-48" value="「編集」／「確認して登録」・&lt;br&gt;「無効化」・「一覧へ」">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e7" edge="1" parent="1" source="M" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="P1" value="">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-59" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-49" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="RMOxsJ6nVRq_UkuNk-NA-50" value="「詳細」／「一覧へ」・&lt;br&gt;「登録しない」ボタンをクリック">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e8" edge="1" parent="1" source="M" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="S1" value="">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-60" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-50" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="RMOxsJ6nVRq_UkuNk-NA-51" value="「商品マスターに登録」／&lt;br&gt;「戻る」ボタンをクリック">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e9" edge="1" parent="1" source="M" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="R1" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e10" edge="1" parent="1" source="O1" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="O2" value="「詳細」／「一覧へ」&lt;br&gt;ボタンをクリック">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e11" edge="1" parent="1" source="O2" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="P1" value="「QR読み取りへ」&lt;br&gt;ボタンをクリック">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e12" edge="1" parent="1" source="P1" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="P2" value="コード入力・「確認」／&lt;br&gt;「戻る」ボタンをクリック">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e13" edge="1" parent="1" source="P2" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="P3" value="「受け取りを完了する」&lt;br&gt;ボタンをクリック">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e14" edge="1" parent="1" source="P3" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="P1" value="「QR読み取り画面へ」ボタンをクリック">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-61" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-51" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="RMOxsJ6nVRq_UkuNk-NA-49" value="「確認して登録」ボタンをクリック">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1330" y="800" />
-              <mxPoint x="570" y="800" />
+              <mxPoint x="2073.4827586206898" y="1150.6206896551726" />
+              <mxPoint x="1313.4827586206898" y="1150.6206896551726" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e15" edge="1" parent="1" source="S1" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="S2" value="「商品を出品」&lt;br&gt;ボタンをクリック">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e16" edge="1" parent="1" source="S2" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="S3" value="バーコード読み取り・&lt;br&gt;「選択」ボタンをクリック">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e17" edge="1" parent="1" source="S3" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="S1" value="「出品する」ボタンをクリック">
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-62" edge="1" parent="1" source="RMOxsJ6nVRq_UkuNk-NA-44" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="RMOxsJ6nVRq_UkuNk-NA-42" value="ログアウト">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1330" y="850" />
-              <mxPoint x="570" y="850" />
+              <mxPoint x="803.4827586206898" y="970.6206896551726" />
+              <mxPoint x="803.4827586206898" y="590.6206896551726" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e18" edge="1" parent="1" source="S1" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;startArrow=classic;" target="S4" value="「編集」／「出品一覧」&lt;br&gt;ボタンをクリック">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e19" edge="1" parent="1" source="S4" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="S5" value="「在庫調整」&lt;br&gt;ボタンをクリック">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e20" edge="1" parent="1" source="S5" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="S1" value="「出品一覧」ボタンをクリック">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1330" y="1110" />
-              <mxPoint x="570" y="1110" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e21" edge="1" parent="1" source="M" style="endArrow=classic;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="W" value="ログアウト">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="60" y="810" />
-              <mxPoint x="60" y="110" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="title" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=14;fontStyle=1;whiteSpace=wrap;" value="画面遷移図（店舗関係者）ログイン後の行き先はアカウントの役割（account_type）で決まる。&lt;div&gt;&amp;nbsp;※ 商品登録の依頼は、写真を選んで「登録依頼を送信」するだけ（手入力・差し戻しはなし。）&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="700" x="120" y="10" as="geometry" />
+        <mxCell id="RMOxsJ6nVRq_UkuNk-NA-63" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=14;fontStyle=1;whiteSpace=wrap;" value="画面遷移図（システム管理者）ログイン後の行き先はアカウントの役割（account_type）で決まる。&amp;nbsp;&lt;div&gt;※ 写真を見て手で登録し、登録できない依頼は差し戻さず「登録しない」にする&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="700" x="863.4827586206898" y="490.62068965517255" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
