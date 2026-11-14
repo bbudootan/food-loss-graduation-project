@@ -8,9 +8,6 @@
 
 MVPの範囲に合わせて、店舗運営者側の画面遷移図を直しました。
 
-![店舗運営者 MVP v2](./v2/(mvp)store_operator_flow_v2.png)
-
-編集用：[v2 draw.io](./v2/(mvp)store_operator_flow_v2.drawio)　／　以前の全体版：[画面遷移図（店舗関係者）](./画面遷移図（店舗関係者）.drawio.png)
 
 ## MVPで作る画面
 
