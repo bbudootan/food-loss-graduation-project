@@ -8,6 +8,8 @@
 
 MVPの範囲に合わせて、店舗運営者側の画面遷移図を直しました。
 
+![…](./(mvp)store_operator_flow_v2.drawio.png)
+
 
 ## MVPで作る画面
 
