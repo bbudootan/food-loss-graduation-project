@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/34868564/README.md)
 # テーブル定義書 v4（MVP版）
 
 更新日：2026-11-13
