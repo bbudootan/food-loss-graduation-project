@@ -1,6 +1,6 @@
 # テーブル定義書 v4（MVP版）
 
-更新日：2026-11-13
+更新日：2026-11-16
 
 MVP（簡略化版）の範囲に合わせて、テーブルと列を減らした版です。変更の詳細は [CHANGELOG.md](../CHANGELOG.md)、決めたルールは [DECISIONS.md](../DECISIONS.md) を見てください。
 
@@ -31,12 +31,14 @@ MVP（簡略化版）の範囲に合わせて、テーブルと列を減らし�
 - orders.order_status から「3=取り消し」を削除した（注文の取り消しはしない）
 - goods_master に storage_method（保存方法）を追加した（商品カードの裏面に表示する）
 - 商品登録依頼は写真だけにした。goods_registration_request から request_type・goods_name・barcode・unit_weight・correction_reason を削除し、request_status を「0=依頼中 1=登録済み 2=登録しない」にした
+- 先生のレビュー（11/16）：listing に recommend（おすすめフラグ）を追加した。営業時間の CHECK を削除し、日付をまたぐ営業を許した
 
 ## ダミーデータ（JSON）を作るときのメモ
 
 - 列名・型は、この版のテーブル定義書に合わせてください
 - 日時（datetime）は `2026-11-13 18:00:00` の形、時刻（time）は `18:00:00` の形
-- bit の列（category_status、goods_status、goods_changed、listing_status）は 0 / 1
+- bit の列（category_status、goods_status、goods_changed、listing_status、recommend）は 0 / 1
+- 営業時間は日付をまたいでもよい（例：opening_time `10:00:00`、closing_time `02:00:00`）
 - 状態を表す int の列の意味
   - account.account_status：0=利用可 1=停止 2=退会
   - store.store_status：0=利用可 1=停止 2=退店
