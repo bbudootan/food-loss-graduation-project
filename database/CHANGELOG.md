@@ -3,6 +3,15 @@
 テーブル定義書の変更を、テーブル・カラム単位で記録します。
 決めたルールの詳細は [DECISIONS.md](DECISIONS.md) を見てください。
 
+## v4 修正（2026-11-16・先生のレビュー）
+
+| 種類 | テーブル | カラム | 変更前 | 変更後 | 理由 |
+|---|---|---|---|---|---|
+| 追加 | listing | recommend | なし | bit、NOT NULL、初期値0（0=通常商品 1=おすすめ商品） | ホームに「おすすめ」を出すため。店舗が出品のときに設定する（D-26） |
+| 削除 | store | opening_time・closing_time の CHECK | CHECK(opening_time < closing_time) | なし | 日付をまたぐ営業を許すため（D-27） |
+| 削除 | open_store_application | opening_time・closing_time の CHECK | CHECK(opening_time < closing_time) | なし | 同上（D-27） |
+| 変更 | orders | total_amount（日本語名） | 支払額 | 支払合計金額 | 名前を分かりやすくした |
+
 ## v4（2026-11-13）
 
 v3 からの変更です。MVP（簡略化版）の範囲に合わせて、テーブルと列を減らしました。
