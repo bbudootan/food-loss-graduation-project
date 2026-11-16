@@ -11,6 +11,8 @@
 | 削除 | store | opening_time・closing_time の CHECK | CHECK(opening_time < closing_time) | なし | 日付をまたぐ営業を許すため（D-27） |
 | 削除 | open_store_application | opening_time・closing_time の CHECK | CHECK(opening_time < closing_time) | なし | 同上（D-27） |
 | 変更 | orders | total_amount（日本語名） | 支払額 | 支払合計金額 | 名前を分かりやすくした |
+| 追加 | orders | cancel_date | なし | datetime、NULL可（取り消し日時） | 店舗側のキャンセルを戻したため（D-14） |
+| 変更 | orders | order_status | 0=受け取り待ち 1=受け取り済み 2=期限切れ | 0〜2 に「3=キャンセル（店舗都合）」を追加 | 同上。キャンセルしても在庫は戻さない（D-28） |
 
 ## v4（2026-11-13）
 
