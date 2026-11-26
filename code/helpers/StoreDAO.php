@@ -14,6 +14,7 @@ class Store{
     public $store_image;
     public $store_status;
     public $created_date;
+    public $listing_count;  //追加、ユーザー側の店舗一覧の店舗カードの出品中の件数
 }
 
 class StoreDAO{
@@ -53,6 +54,38 @@ class StoreDAO{
         $sql="SELECT * FROM store WHERE store_status = 0 ORDER BY store_id DESC";
 
         $stmt = $dbh->query($sql);
+
+        $data = [];
+
+        while($row = $stmt->fetchObject('Store')){
+            $data[] = $row;
+        }
+        return $data;
+    }
+
+    //追加
+    //店舗一覧・ホーム用、店舗名・住所とジャンルで利用中の店舗を探す（出品中の件数つき）
+    //キーワードが '' なら全部、ジャンルが '' なら絞り込まない
+    public function get_open_store_by_keyword_and_genre(string $keyword,string $genre){
+        $dbh = DAO::get_db_connect();
+
+        $sql = "SELECT s.*,(SELECT COUNT(*) FROM listing AS l WHERE l.store_id = s.store_id AND l.listing_status = 1 AND l.quantity > 0 AND l.sale_end > GETDATE()) AS listing_count FROM store AS s WHERE s.store_status = 0 AND (s.store_name LIKE :keyword1 OR s.address LIKE :keyword2)";
+
+        if($genre !== ''){
+            $sql .= " AND s.store_genre = :store_genre";
+        }
+
+        $sql .= " ORDER BY listing_count DESC,s.store_id ASC";
+
+        $stmt = $dbh->prepare($sql);
+
+        $stmt->bindValue(':keyword1','%'.$keyword.'%',PDO::PARAM_STR);
+        $stmt->bindValue(':keyword2','%'.$keyword.'%',PDO::PARAM_STR);
+        if($genre !== ''){
+            $stmt->bindValue(':store_genre',$genre,PDO::PARAM_STR);
+        }
+
+        $stmt->execute();
 
         $data = [];
 

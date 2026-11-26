@@ -43,6 +43,47 @@ class ListingDAO{
         return $data;
     }
 
+    //追加
+    //商品一覧用、キーワード（商品名・店舗名）・カテゴリ・並び順で今買える出品を探す
+    //カテゴリが 0 なら全部。並び順は 'price-asc'（価格が安い順）・'discount-desc'（割引率が高い順）・それ以外（おすすめ順）
+    public function get_listing_for_user_by_search(string $keyword,int $category_id,string $sort){
+        $dbh = DAO::get_db_connect();
+
+        $sql = "SELECT l.*,g.goods_name,g.goods_image,g.unit_weight,g.allergen,g.goods_description,g.storage_method,g.category_id,s.store_name FROM listing AS l INNER JOIN goods_master AS g ON l.goods_id = g.goods_id INNER JOIN store AS s ON l.store_id = s.store_id WHERE l.listing_status = 1 AND l.quantity > 0 AND l.sale_end > GETDATE() AND s.store_status = 0 AND (g.goods_name LIKE :keyword1 OR s.store_name LIKE :keyword2)";
+
+        if($category_id > 0){
+            $sql .= " AND g.category_id = :category_id";
+        }
+
+        if($sort === 'price-asc'){
+            $sql .= " ORDER BY l.selling_price ASC";
+        }
+        else if($sort === 'discount-desc'){
+            $sql .= " ORDER BY (l.regular_price - l.selling_price) * 100 / l.regular_price DESC";
+        }
+        else{
+            $sql .= " ORDER BY l.recommend DESC,l.sale_end ASC";
+        }
+
+        $stmt = $dbh->prepare($sql);
+
+        $stmt->bindValue(':keyword1','%'.$keyword.'%',PDO::PARAM_STR);
+        $stmt->bindValue(':keyword2','%'.$keyword.'%',PDO::PARAM_STR);
+        
+        if($category_id > 0){
+            $stmt->bindValue(':category_id',$category_id,PDO::PARAM_INT);
+        }
+
+        $stmt->execute();
+
+        $data = [];
+
+        while($row = $stmt->fetchObject('Listing')){
+            $data[] = $row;
+        }
+        return $data;
+    }
+
     //店舗詳細用、その店舗の今買える出品
     public function get_listing_for_user_by_store(int $store_id){
         $dbh = DAO::get_db_connect();
