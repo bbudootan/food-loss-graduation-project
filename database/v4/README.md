@@ -1,6 +1,6 @@
 # テーブル定義書 v4（MVP版）
 
-更新日：2026-11-20
+更新日：2026-11-26
 
 MVP（簡略化版）の範囲に合わせて、テーブルと列を減らした版です。変更の詳細は [CHANGELOG.md](../CHANGELOG.md)、決めたルールは [DECISIONS.md](../DECISIONS.md) を見てください。
 
@@ -35,6 +35,7 @@ MVP（簡略化版）の範囲に合わせて、テーブルと列を減らし�
 - 11/16：店舗側のキャンセルだけ戻した。orders に cancel_date を戻し、order_status に「3=キャンセル（店舗都合）」を足した（DECISIONS D-14・D-28）
 - 11/18（先生のレビュー）：orders から pickup_code（受け取りコード）を削除した。受け取り確認コードは「店舗ID-注文ID」（例：1-100）を画面で組み立てて表示し、店舗が入力したコードで照合する（DECISIONS D-24・D-25）
 - 11/20：account に avatar_image（プロフィール画像）を追加した。
+- 11/26：討論の結果、受け取り締め切り日時を表す列であることを明確にするため、注文テーブルの列名を pickup_schedule から pickup_deadline に変更する。データ型は datetime とし、締め切り日時の算出には従来のルールを適用する。
 
 ## ダミーデータ（JSON）を作るときのメモ
 
@@ -50,7 +51,7 @@ MVP（簡略化版）の範囲に合わせて、テーブルと列を減らし�
 - 商品名・アレルゲン・保存方法は goods_master、価格・残数・食品期限・締め切りは listing、店舗名・営業時間は store から取ります（商品カードは listing を中心に goods_master と store をつなぎます）
 - store.store_genre・store_image は、店舗情報の画面がMVP対象外なので、ダミーデータで入れてください
 - 店舗カードには距離を出さず、住所（store.address）を表示します
-- orders.pickup_schedule は受け取りの締め切り日時です（閉店時間と、注文内でいちばん早い sale_end の早いほう）。ユーザーは時刻を選びません（DECISIONS D-05）
+- orders.pickup_deadline は受け取りの締め切り日時です（閉店時間と、注文内でいちばん早い sale_end の早いほう）。ユーザーは時刻を選びません（DECISIONS D-05）
 
 ## 未決のこと
 
