@@ -8,6 +8,14 @@
     <?php foreach (['mobile' => 1, 'tablet' => 2, 'desktop' => 4] as $layout => $itemsPerSlide): ?>
         <?php
         $slides = array_chunk($carousel_product_list, $itemsPerSlide);
+
+        // 最後のページが足りない場合は、先頭の商品で埋める処理（見た目上は商品が循環しているように表示できる）
+        if (count($slides) > 1) {
+            $lastIndex = count($slides) - 1;
+            $missingCount = $itemsPerSlide - count($slides[$lastIndex]);
+            $slides[$lastIndex] = array_merge($slides[$lastIndex], array_slice($carousel_product_list, 0, $missingCount));
+        }
+
         $instanceId = $carouselId . '-' . $layout;
         ?>
         <?php
@@ -20,7 +28,7 @@
         ?>
         <div class="<?= $visibilityClass ?>">
             <div id="<?= htmlspecialchars($instanceId) ?>" class="carousel slide position-relative" data-bs-interval="false">
-                <div class="carousel-inner">
+                <div class="carousel-inner" style="overflow: visible;">
                     <?php foreach ($slides as $slideIndex => $productsOnSlide): ?>
                         <div class="carousel-item<?= $slideIndex === 0 ? ' active' : '' ?>">
                             <div class="row g-3">
