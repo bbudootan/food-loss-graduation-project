@@ -31,14 +31,14 @@
                 <section class="card mb-3 shadow-sm overflow-hidden">
                     <!-- 店舗名とカート内点数 -->
                     <div class="card-header bg-white d-flex align-items-center justify-content-between gap-2 px-3 py-3">
-                        <h6 class="fw-bold mb-0"><span class="bi bi-shop-window me-2"></span><?= escapeHtml($cartStore['name']) ?></h6>
+                        <h6 class="fw-bold mb-0"><span class="bi bi-shop-window me-2"></span><?= htmlspecialchars($cartStore['name']) ?></h6>
                         <span class="badge rounded-pill text-bg-light border text-secondary flex-shrink-0"><?= $cartStore['quantity'] ?> / 10点</span>
                     </div>
                     <!-- 商品名・単価・カート内数量 -->
                     <ul class="list-unstyled px-3 pt-3 mb-0">
                         <?php foreach ($cartStore['items'] as $cartProduct): ?>
                             <li class="d-flex align-items-start justify-content-between gap-3 mb-3">
-                                <span class="small"><?= escapeHtml($cartProduct['goods_name']) ?></span>
+                                <span class="small"><?= htmlspecialchars($cartProduct['goods_name']) ?></span>
                                 <span class="small text-secondary text-nowrap">¥<?= number_format($cartProduct['selling_price']) ?> × <?= $cartProduct['cart_quantity'] ?></span>
                             </li>
                         <?php endforeach; ?>

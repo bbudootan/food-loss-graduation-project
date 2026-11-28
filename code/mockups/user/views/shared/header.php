@@ -1,7 +1,7 @@
 <header class="sticky-top">
     <nav class="navbar navbar-expand-lg py-2">
         <div class="container position-relative">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="<?= escapeHtml($homeUrl) ?>">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="<?= htmlspecialchars($homeUrl) ?>">
                 <img src="../images/logo-small.png" height="32">
                 <span>JEC Food Rescue</span>
             </a>
@@ -30,7 +30,7 @@
 
             <div class="collapse navbar-collapse justify-content-center header-nav-center" id="topMenu">
                 <ul class="navbar-nav gap-lg-2">
-                    <li class="nav-item"><a class="nav-link" href="<?= escapeHtml($homeUrl) ?>">ホーム</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= htmlspecialchars($homeUrl) ?>">ホーム</a></li>
                     <li class="nav-item"><a class="nav-link" href="product_listing.php">商品一覧</a></li>
                     <li class="nav-item"><a class="nav-link" href="store_listing.php">店舗一覧</a></li>
                 </ul>

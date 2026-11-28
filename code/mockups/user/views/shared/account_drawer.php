@@ -28,7 +28,7 @@
             <div class="card text-center mb-4">
                 <div class="card-body p-3">
                     <img src="../images/<?= rawurlencode($member['avatar_image']) ?>" width="72" height="72" class="rounded-circle object-fit-cover mb-3">
-                    <div class="fw-bold mb-2"><?= escapeHtml($member['name']) ?></div>
+                    <div class="fw-bold mb-2"><?= htmlspecialchars($member['name']) ?></div>
                 </div>
             </div>
 
