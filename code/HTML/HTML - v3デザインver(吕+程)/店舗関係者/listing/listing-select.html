@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- 【每次修改】页面标题 -->
+     <title>商品選択・バーコード入力 - JEC Food Rescue</title>
+     <!-- 引入 Bootstrap 5 样式库 -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+     <!-- 引入 Bootstrap 图标库 -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!-- 引入自定义 CSS 样式 -->
+     <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-light">
+
+     <div class="d-flex min-vh-100">
+
+          <!-- 侧边栏（完全保持店铺管理者最新基底一致，高亮：出品・在庫） -->
+          <div class="offcanvas-lg offcanvas-start bg-white border-end flex-shrink-0" id="sidebar">
+               <div class="offcanvas-header d-lg-none">
+                    <h5 class="offcanvas-title">メニュー</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebar" aria-label="閉じる"></button>
+               </div>
+
+               <div class="offcanvas-body d-flex flex-column p-3">
+                    <!-- 顶部 Logo -->
+                    <a href="../main/main.html" class="d-block mb-2 text-decoration-none link-body-emphasis">
+                         <div class="fw-bold">JEC Food Rescue</div>
+                         <small class="text-secondary">店舗管理</small>
+                    </a>
+
+                    <!-- 主菜单 -->
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../main/main.html"><i class="bi bi-house me-2"></i>メイン</a>
+                    </nav>
+
+                    <!-- 販売分组（当前高亮：出品・在庫） -->
+                    <p class="small fw-bold text-secondary mt-3 mb-1 ms-2">販売</p>
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../pickup/pickup.html"><i class="bi bi-pencil-square me-2"></i>受け取り確認</a>
+                         <a class="nav-link link-body-emphasis" href="../orders/orders.html"><i class="bi bi-receipt me-2"></i>注文管理</a>
+                         <a class="nav-link active" href="../listing/listing.html"><i class="bi bi-box-seam me-2"></i>出品・在庫</a>
+                    </nav>
+
+                    <!-- 暂时隐藏「商品」和「店舗」分组（需要恢复时删掉前后的注释符号即可）
+                    <p class="small fw-bold text-secondary mt-3 mb-1 ms-2">商品</p>
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../request/request.html"><i class="bi bi-plus-square me-2"></i>商品登録の依頼</a>
+                         <a class="nav-link link-body-emphasis" href="../history/history.html"><i class="bi bi-clock-history me-2"></i>申請履歴</a>
+                    </nav>
+
+                    <p class="small fw-bold text-secondary mt-3 mb-1 ms-2">店舗</p>
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../sales/sales.html"><i class="bi bi-bar-chart me-2"></i>売り上げ</a>
+                         <a class="nav-link link-body-emphasis" href="../reviews/reviews.html"><i class="bi bi-star me-2"></i>レビュー</a>
+                         <a class="nav-link link-body-emphasis" href="../mail/mail.html"><i class="bi bi-envelope me-2"></i>お知らせメール</a>
+                         <a class="nav-link link-body-emphasis" href="../inquiry/inquiry.html"><i class="bi bi-chat-left-text me-2"></i>お問い合わせ</a>
+                         <a class="nav-link link-body-emphasis" href="../store_info/store_info.html"><i class="bi bi-shop me-2"></i>店舗情報</a>
+                    </nav>
+                    -->
+
+                    <hr>
+                    <a class="nav-link link-body-emphasis" href="../login/login.html"><i class="bi bi-box-arrow-left me-2"></i>ログアウト</a>
+               </div>
+          </div>
+          <!-- 侧边栏到此结束 -->
+
+          <!-- 右侧内容区 -->
+          <div class="flex-grow-1 overflow-hidden">
+               <!-- 顶部导航栏 -->
+               <header class="d-flex align-items-center border-bottom bg-white px-3" style="min-height: 48px;">
+                    <button class="btn btn-outline-secondary btn-sm d-lg-none me-2" type="button"
+                         data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-label="メニュー">
+                         <i class="bi bi-list"></i>
+                    </button>
+               </header>
+
+               <!-- 页面主体内容区 -->
+               <main class="container-fluid p-4">
+
+                    <!-- 页面标题行 -->
+                    <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4 pb-2 border-bottom">
+                         <div>
+                              <h1 class="h3 fw-bold mb-1">出品商品の選択</h1>
+                              <p class="text-secondary mb-0">バーコード番号の入力、または商品名検索から出品する商品を選択してください</p>
+                         </div>
+                         <div>
+                              <a href="listing.html" class="btn btn-outline-secondary px-4">一覧へ戻る</a>
+                         </div>
+                    </div>
+
+                    <!-- 【1. 手动输入条形码卡片（已将原本的摄像头扫码区改为手动输入）】 -->
+                    <div class="card shadow-sm mb-4">
+     <div class="card-body p-4">
+          <h2 class="h5 fw-bold mb-3 pb-2 border-bottom">バーコード番号で入力</h2>
+
+          <form action="listing-create.html" method="get">
+               <!-- 1. 顶部标签 -->
+               <label for="manualBarcode" class="form-label fw-bold">バーコード番号（JANコード）</label>
+
+               <!-- 2. 输入框与「確認」按钮放在同一行，只对齐它们两个 -->
+               <div class="row g-3 align-items-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                         <!-- 不加 required，空栏或直接用默认测试码点击「確認」均可直接跳转下一页 -->
+                         <input type="text" class="form-control form-control-lg" id="manualBarcode" name="barcode"
+                                value="4901234567890" placeholder="例：4901234567890">
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                         <button type="submit" class="btn btn-dark btn-lg px-5 w-100 w-md-auto">確認</button>
+                    </div>
+               </div>
+
+               <!-- 3. 底部说明小字放在行外，不再把按钮往下挤 -->
+               <div class="form-text mt-2">※商品パッケージに記載されているバーコード番号を入力してください</div>
+          </form>
+     </div>
+</div>
+
+                    <!-- 【2. 商品名で検索 + 商品 Master 候选表格】 -->
+                    <div class="card shadow-sm">
+                         <div class="card-body p-4">
+                              <h2 class="h5 fw-bold mb-3 pb-2 border-bottom">商品名で検索</h2>
+
+                              <!-- 搜索框 -->
+                              <form class="row g-3 align-items-end mb-4">
+                                   <div class="col-12 col-md-9">
+                                        <input type="text" class="form-control" placeholder="商品名を入力して検索">
+                                   </div>
+                                   <div class="col-12 col-md-3">
+                                        <button type="submit" class="btn btn-outline-dark w-100">
+                                             <i class="bi bi-search me-1"></i>検索
+                                        </button>
+                                   </div>
+                              </form>
+
+                              <!-- 搜索结果表 -->
+                              <div class="table-responsive">
+                                   <table class="table table-hover align-middle mb-0 text-center">
+                                        <thead class="table-light">
+                                             <tr>
+                                                  <th scope="col" style="width: 22%;">商品ID</th>
+                                                  <th scope="col" style="width: 38%;">商品名</th>
+                                                  <th scope="col" style="width: 25%;">カテゴリ</th>
+                                                  <th scope="col" style="width: 15%;">操作</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody>
+                                             <!-- 示例行 1 -->
+                                             <tr>
+                                                  <td>PRD-00001</td>
+                                                  <td class="text-start fw-bold">北海道産バターのクロワッサン</td>
+                                                  <td>パン・ベーカリー</td>
+                                                  <td>
+                                                       <a href="listing-create.html" class="btn btn-outline-dark btn-sm px-4">選択</a>
+                                                  </td>
+                                             </tr>
+                                             <!-- 示例行 2 -->
+                                             <tr>
+                                                  <td>PRD-00002</td>
+                                                  <td class="text-start fw-bold">彩り幕の内弁当</td>
+                                                  <td>弁当・惣菜</td>
+                                                  <td>
+                                                       <a href="listing-create.html" class="btn btn-outline-dark btn-sm px-4">選択</a>
+                                                  </td>
+                                             </tr>
+                                        </tbody>
+                                   </table>
+                              </div>
+                         </div>
+                    </div>
+
+               </main>
+          </div>
+          <!-- 右侧内容区到此结束 -->
+     </div>
+
+     <!-- 引入 Bootstrap 交互逻辑所需的 JavaScript 库 -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

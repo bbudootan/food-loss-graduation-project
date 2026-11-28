@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>商品一覧 - JEC Food Rescue</title>
+     <!-- Bootstrap 5 CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+     <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!-- カスタムCSS / 自定义外部样式 -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+     <!-- 1. 共通ヘッダー挿入先（js/auth-state.js が自動描画） / 公共顶部导航栏占位（由 auth-state.js 自动生成） -->
+     <div id="commonHeader"></div>
+
+     <!-- 2. メインコンテンツ / 主内容区 -->
+     <main class="container py-4 flex-grow-1">
+          <!-- パンくずリスト / 面包屑导航 -->
+          <nav aria-label="breadcrumb" class="mb-3">
+               <ol class="breadcrumb small mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-secondary">ホーム</a></li>
+                    <li class="breadcrumb-item active text-dark fw-bold">商品一覧</li>
+               </ol>
+          </nav>
+
+          <!-- タイトルと検索・絞り込みフォーム（PHP移行時は method="GET" で送信） / 标题与搜索筛选区（后续转 PHP 可直接用 GET 提交） -->
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+               <h1 class="h5 fw-bold mb-0">出品中の商品一覧（<span id="productCount">0</span>件）</h1>
+               <form action="products.php" method="GET" class="d-flex flex-wrap align-items-center gap-2" onsubmit="return false;">
+                    <!-- キーワード入力 / 关键词输入框 -->
+                    <input type="text" name="keyword" class="form-control form-control-sm" id="searchInput" placeholder="商品名・店舗名で検索" style="width: 190px;">
+                    <!-- ジャンル選択 / 食品品类下拉框 -->
+                    <select name="genre" class="form-select form-select-sm" id="genreFilter" style="width: 155px;">
+                         <option value="all" selected>すべてのジャンル</option>
+                         <option value="ベーカリー">ベーカリー</option>
+                         <option value="お弁当・惣菜">お弁当・惣菜</option>
+                         <option value="スイーツ・洋菓子">スイーツ・洋菓子</option>
+                    </select>
+                    <!-- 並び順選択 / 排序下拉框 -->
+                    <select name="sort" class="form-select form-select-sm" id="sortSelect" style="width: 155px;">
+                         <option value="default" selected>おすすめ順</option>
+                         <option value="price-asc">価格が安い順</option>
+                         <option value="discount-desc">割引率が高い順</option>
+                    </select>
+                    <!-- 検索ボタン / 搜索按钮 -->
+                    <button type="button" class="btn btn-brown btn-sm px-3" id="searchBtn"><i class="bi bi-search me-1"></i>検索</button>
+               </form>
+          </div>
+
+          <!-- 商品カード一覧グリッド（JSで動的生成） / 商品卡片网格容器（由 JS 动态渲染） -->
+          <div class="row g-3 mb-4" id="productGrid"></div>
+
+          <!-- ホームへ戻るボタン / 返回首页按钮 -->
+          <div class="text-center mt-3">
+               <a href="index.html" class="btn btn-outline-brown btn-sm px-4 js-home-link">&larr; ホームへ戻る</a>
+          </div>
+     </main>
+
+     <!-- 3. 共通フッター・ドロワー挿入先 / 公共页脚与侧边抽屉占位 -->
+     <div id="commonFooter"></div>
+
+     <!-- Bootstrap 5 JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- ログイン状態判定・共通UIスクリプト / 登录状态判断与公共交互脚本 -->
+     <script src="js/auth-state.js"></script>
+     <script>
+          // ダミー商品データ配列（PHP化後はDBの goods テーブルから取得）
+          // 模拟商品数据数组（后续改用 PHP 后改为从数据库 goods 表读取）
+          const PRODUCTS = [
+               { name: '北海道産バターのクロワッサン', shop: 'ベーカリー太陽 新宿店', genre: 'ベーカリー', oldPrice: 300, price: 180, discount: 40, limit: '20:00', stock: 3, desc: '北海道産発酵バターを使用した当日焼き上げクロワッサン', amount: '2個入り（約120g）', allergen: '小麦・乳成分・卵', exp: '当日 22:00（消費期限）', storage: '常温保存' },
+               { name: '彩り幕の内弁当', shop: 'キッチンみどり 西新宿店', genre: 'お弁当・惣菜', oldPrice: 960, price: 480, discount: 50, limit: '20:30', stock: 2, desc: '焼き鮭・厚焼き玉子・季節野菜の煮物を詰めた手作り弁当', amount: '1折（約450g）', allergen: '小麦・卵・さけ・大豆', exp: '当日 22:00（消費期限）', storage: '10℃以下で冷蔵保存' },
+               { name: '季節のフルーツタルト', shop: 'パティスリー森の風', genre: 'スイーツ・洋菓子', oldPrice: 800, price: 520, discount: 35, limit: '19:30', stock: 0, desc: '旬のフルーツを使った自家製タルト', amount: '1カット', allergen: '小麦・卵・乳成分', exp: '当日 21:00', storage: '要冷蔵' },
+               { name: '特製ロースカツサンド', shop: 'ベーカリー太陽 新宿店', genre: 'ベーカリー', oldPrice: 550, price: 320, discount: 41, limit: '20:00', stock: 4, desc: 'やわらか三元豚のロースカツをふわふわ食パンで挟みました', amount: '3切れ入り', allergen: '小麦・豚肉・卵・大豆', exp: '当日 22:00（消費期限）', storage: '10℃以下で冷蔵保存' },
+               { name: '鶏の唐揚げ＆野菜惣菜セット', shop: 'キッチンみどり 西新宿店', genre: 'お弁当・惣菜', oldPrice: 700, price: 380, discount: 45, limit: '20:30', stock: 1, desc: '特製醤油ダレの唐揚げと彩り野菜のお惣菜盛り合わせ', amount: '1パック（約320g）', allergen: '小麦・鶏肉・大豆・ごま', exp: '当日 22:00（消費期限）', storage: '10℃以下で冷蔵保存' },
+               { name: '濃厚ショコラロールケーキ', shop: 'パティスリー森の風', genre: 'スイーツ・洋菓子', oldPrice: 680, price: 400, discount: 41, limit: '19:30', stock: 2, desc: 'ベルギー産クーベルチュールチョコを使用した生ロール', amount: '2カット入り', allergen: '小麦・卵・乳成分・大豆', exp: '翌日 12:00（消費期限）', storage: '10℃以下で要冷蔵' }
+          ];
+
+          // 検索条件・並び替えを適用して商品カードを描画する関数
+          // 根据搜索条件与排序方式过滤并渲染商品卡片的函数
+          function renderProducts() {
+               const kw = document.getElementById('searchInput').value.trim().toLowerCase();
+               const genre = document.getElementById('genreFilter').value;
+               const sort = document.getElementById('sortSelect').value;
+
+               // 条件フィルタリング / 条件筛选
+               let list = PRODUCTS.filter(p => (p.name + p.shop).toLowerCase().includes(kw) && (genre === 'all' || p.genre === genre));
+               // ソート処理 / 排序处理
+               if (sort === 'price-asc') list.sort((a, b) => a.price - b.price);
+               if (sort === 'discount-desc') list.sort((a, b) => b.discount - a.discount);
+
+               // 件数表示の更新 / 更新商品件数显示
+               document.getElementById('productCount').textContent = list.length;
+               const grid = document.getElementById('productGrid');
+
+               // 該当なしの場合 / 无匹配商品时的提示
+               if (!list.length) {
+                    grid.innerHTML = '<div class="col-12 text-center py-5 text-secondary">条件に一致する商品が見つかりませんでした。</div>';
+                    return;
+               }
+
+               // 3D反転カードHTMLの生成（.join('') で配列を1つの文字列に結合）
+               // 生成 3D 翻转卡片 HTML（使用 .join('') 将数组无缝拼接为字符串）
+               grid.innerHTML = list.map(p => {
+                    const soldout = p.stock === 0;
+                    return `
+                    <div class="col-12 col-md-4">
+                         <div class="product-flip-card ${soldout ? 'product-soldout' : ''}">
+                              <div class="product-flip-inner">
+                                   <!-- カード表面 / 卡片正面 -->
+                                   <div class="card product-flip-front">
+                                        <div class="card-img-box border-bottom d-flex align-items-center justify-content-center">
+                                             <span class="corner-ribbon">${soldout ? '売り切れ' : `残り：${p.stock}点`}</span>
+                                             <button type="button" class="btn btn-link text-danger position-absolute top-0 end-0 m-1 p-1" hidden><i class="bi bi-heart fs-5"></i></button>
+                                             <span class="${soldout ? 'text-light' : 'text-secondary'} small"><i class="bi bi-image me-1"></i>商品写真</span>
+                                        </div>
+                                        <div class="card-body p-3 d-flex flex-column justify-content-between ${soldout ? 'soldout-disable' : ''}">
+                                             <div>
+                                                  <h3 class="h6 fw-bold mb-1">${p.name}</h3>
+                                                  <div class="small ${soldout ? '' : 'text-secondary'} mb-1">${p.shop}</div>
+                                                  <div class="mb-1"><span class="small ${soldout ? '' : 'text-secondary'}">通常価格 <del>¥${p.oldPrice}</del></span> <span class="fw-bold mx-1">&gt;</span> <span class="fw-bold fs-5">¥${p.price}</span></div>
+                                                  <div class="small ${soldout ? '' : 'text-secondary'} mb-2">${p.limit}まで受取可</div>
+                                             </div>
+                                             <div>
+                                                  <div class="d-flex justify-content-between align-items-center mb-2">
+                                                       <span class="small">購入数量</span>
+                                                       <div class="btn-group btn-group-sm qty-control">
+                                                            <button type="button" class="btn btn-outline-secondary btn-minus" ${soldout ? 'disabled' : ''}>-</button>
+                                                            <span class="btn btn-outline-secondary disabled text-dark qty-val">1</span>
+                                                            <button type="button" class="btn btn-outline-secondary btn-plus" data-max="${p.stock}" ${soldout ? 'disabled' : ''}>+</button>
+                                                       </div>
+                                                  </div>
+                                                  <div class="d-grid mb-2"><button type="button" class="btn ${soldout ? 'btn-outline-secondary' : 'btn-outline-dark js-add-cart'} btn-sm" ${soldout ? 'disabled' : ''}><i class="bi bi-cart me-1"></i>カートに入れる</button></div>
+                                                  <div class="text-end">${soldout ? '<span class="small">商品について &rarr;</span>' : '<button type="button" class="flip-toggle-link js-flip-to-back">商品について &rarr;</button>'}</div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <!-- カード裏面（売り切れ時は非表示） / 卡片背面详情（售罄时不生成背面） -->
+                                   ${soldout ? '' : `
+                                   <div class="card product-flip-back">
+                                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                                             <div>
+                                                  <h4 class="h6 fw-bold border-bottom pb-2 mb-3">${p.name}</h4>
+                                                  <ul class="small ps-3 mb-0" style="line-height: 1.9;">
+                                                       <li><strong>商品説明：</strong>${p.desc}</li>
+                                                       <li><strong>内容量：</strong>${p.amount}</li>
+                                                       <li><strong>アレルゲン：</strong>${p.allergen}</li>
+                                                       <li><strong>食品期限：</strong>${p.exp}</li>
+                                                       <li><strong>保存方法：</strong>${p.storage}</li>
+                                                  </ul>
+                                             </div>
+                                             <div class="text-end border-top pt-2"><button type="button" class="flip-toggle-link js-flip-to-front">商品に戻る &rarr;</button></div>
+                                        </div>
+                                   </div>`}
+                              </div>
+                         </div>
+                    </div>`;
+               }).join('');
+          }
+
+          // 初期描画とイベント登録 / 页面加载首次渲染及绑定搜索筛选事件
+          renderProducts();
+          document.getElementById('searchBtn').addEventListener('click', renderProducts);
+          document.getElementById('searchInput').addEventListener('keydown', e => { if (e.key === 'Enter') renderProducts(); });
+          
+     </script>
+</body>
+</html>
