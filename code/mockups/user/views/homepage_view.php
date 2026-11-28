@@ -17,11 +17,17 @@
         <p class="text-secondary">現在、表示できる店舗はありません。</p>
     <?php else: ?>
         <div class="row g-3">
-            <?php foreach ($store_list as $store): ?>
-                <div class="col-12 col-md-6 col-lg-4">
+            <?php foreach ($store_list as $index => $store): ?>
+                <!-- 4件目以降は最初は非表示 -->
+                <div class="col-12 col-md-6 col-lg-4 store-item <?= $index >= 3 ? 'd-none' : '' ?>">
                     <?php require __DIR__ . '/components/store_card.php'; ?>
                 </div>
             <?php endforeach; ?>
         </div>
+        <?php if (count($store_list) > 3): ?>
+            <div class="text-center mt-3">
+                <button type="button" id="showMoreStores" class="btn btn-outline-brown btn-sm px-4">もっと見る &#9660;</button>
+            </div>
+        <?php endif; ?>
     <?php endif; ?>
 </section>

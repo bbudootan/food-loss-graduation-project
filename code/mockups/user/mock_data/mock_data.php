@@ -205,5 +205,17 @@ return [
             'store_description' => '季節の素材を使った洋菓子をご用意しています。',
             'tel' => '000-0000-0003', // モック用の電話番号
         ],
+        [
+            'store_id' => 4,
+            'store_name' => 'カフェひだまり',
+            'store_genre' => 'カフェ',
+            'address' => '東京都新宿区西新宿3-1-1',
+            'opening_time' => '09:00:00',
+            'closing_time' => '19:00:00',
+            'store_image' => null,
+            'listing_count' => 0,
+            'store_description' => 'コーヒーと軽食を提供するカフェです。',
+            'tel' => '000-0000-0004', // モック用の電話番号
+        ],
     ],
 ];
