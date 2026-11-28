@@ -90,7 +90,7 @@ $listingDAO = new ListingDAO();
 | `add(int $account_id, int $listing_id, int $quantity)` | なし | 商品詳細の「カートに入れる」 | 同じ商品がもうあれば数を足す。**10点の確認はしないので、先に get_store_total で確かめる** |
 | `update_cart_quantity(int $account_id, int $listing_id, int $quantity)` | なし | カートの ＋・－ | 数を上書きする。10点を超えないか、在庫（stock）を超えないかは画面で確かめる |
 | `delete(int $account_id, int $listing_id)` | なし | カートの削除 | 1行消す |
-| `read_cart(int $account_id)` | 配列 | カートのドロワー | Yさん担当。店舗ごとにまとめた配列を返す |
+| `read_cart(int $account_id)` | 配列 | カートのドロワー | 店舗ごとにまとめた配列を返す |
 
 ### OrdersDAO（orders・order_detail）
 
