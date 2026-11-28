@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>在庫調整 - JEC Food Rescue</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-light">
+
+     <div class="d-flex min-vh-100">
+
+          <!-- 侧边栏（保持出品・在庫高亮） -->
+          <div class="offcanvas-lg offcanvas-start bg-white border-end flex-shrink-0" id="sidebar">
+               <div class="offcanvas-header d-lg-none">
+                    <h5 class="offcanvas-title">メニュー</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebar" aria-label="閉じる"></button>
+               </div>
+
+               <div class="offcanvas-body d-flex flex-column p-3">
+                    <a href="../main/main.html" class="d-block mb-2 text-decoration-none link-body-emphasis">
+                         <div class="fw-bold">JEC Food Rescue</div>
+                         <small class="text-secondary">店舗管理</small>
+                    </a>
+
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../main/main.html"><i class="bi bi-house me-2"></i>メイン</a>
+                    </nav>
+
+                    <p class="small fw-bold text-secondary mt-3 mb-1 ms-2">販売</p>
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../pickup/pickup.html"><i class="bi bi-pencil-square me-2"></i>受け取り確認</a>
+                         <a class="nav-link link-body-emphasis" href="../orders/orders.html"><i class="bi bi-receipt me-2"></i>注文管理</a>
+                         <a class="nav-link active" href="../listing/listing.html"><i class="bi bi-box-seam me-2"></i>出品・在庫</a>
+                    </nav>
+
+                    <!-- 暂时隐藏「商品」和「店舗」分组
+                    <p class="small fw-bold text-secondary mt-3 mb-1 ms-2">商品</p>
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../request/request.html"><i class="bi bi-plus-square me-2"></i>商品登録の依頼</a>
+                         <a class="nav-link link-body-emphasis" href="../history/history.html"><i class="bi bi-clock-history me-2"></i>申請履歴</a>
+                    </nav>
+
+                    <p class="small fw-bold text-secondary mt-3 mb-1 ms-2">店舗</p>
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../sales/sales.html"><i class="bi bi-bar-chart me-2"></i>売り上げ</a>
+                         <a class="nav-link link-body-emphasis" href="../reviews/reviews.html"><i class="bi bi-star me-2"></i>レビュー</a>
+                         <a class="nav-link link-body-emphasis" href="../mail/mail.html"><i class="bi bi-envelope me-2"></i>お知らせメール</a>
+                         <a class="nav-link link-body-emphasis" href="../inquiry/inquiry.html"><i class="bi bi-chat-left-text me-2"></i>お問い合わせ</a>
+                         <a class="nav-link link-body-emphasis" href="../store_info/store_info.html"><i class="bi bi-shop me-2"></i>店舗情報</a>
+                    </nav>
+                    -->
+
+                    <hr>
+                    <a class="nav-link link-body-emphasis" href="../login/login.html"><i class="bi bi-box-arrow-left me-2"></i>ログアウト</a>
+               </div>
+          </div>
+
+          <!-- 右侧内容区 -->
+          <div class="flex-grow-1 overflow-hidden">
+               <header class="d-flex align-items-center border-bottom bg-white px-3" style="min-height: 48px;">
+                    <button class="btn btn-outline-secondary btn-sm d-lg-none me-2" type="button"
+                         data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-label="メニュー">
+                         <i class="bi bi-list"></i>
+                    </button>
+               </header>
+
+               <main class="container-fluid p-4">
+
+                    <!-- 页面标题行 -->
+                    <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4 pb-2 border-bottom">
+                         <div>
+                              <h1 class="h3 fw-bold mb-1">在庫調整</h1>
+                              <p class="text-secondary mb-0">現在の在庫数と未受け取り注文数を確認し、在庫数の更新を行えます</p>
+                         </div>
+                    </div>
+
+                    <!-- 【在库调整主卡片】 -->
+                    <div class="card shadow-sm">
+                         <div class="card-body p-4">
+
+                              <!-- 上半部分边框盒：商品名 / 在庫数 / 注文済み・未受け取り -->
+                              <div class="border rounded p-4 mb-4 bg-light">
+                                   <div class="mb-3 pb-2 border-bottom">
+                                        <div class="small text-secondary fw-bold mb-1">商品名</div>
+                                        <div class="fs-5 fw-bold">北海道産バターのクロワッサン</div>
+                                   </div>
+
+                                   <div class="row g-3">
+                                        <div class="col-12 col-md-6">
+                                             <div class="small text-secondary fw-bold mb-1">在庫数</div>
+                                             <div class="fs-5 fw-bold">12個</div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                             <div class="small text-secondary fw-bold mb-1">注文済み・未受け取り</div>
+                                             <div class="fs-5 fw-bold text-warning-emphasis">3個</div>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <!-- 下半部分输入表单：変更後の在庫数 / 変更理由 -->
+                              <form>
+                                   <div class="mb-3">
+                                        <label for="newStockCount" class="form-label fw-bold">変更後の在庫数</label>
+                                        <input type="number" class="form-control" id="newStockCount" value="12" min="0">
+                                   </div>
+
+                                   <div class="mb-4">
+                                        <label for="stockChangeReason" class="form-label fw-bold">変更理由</label>
+                                        <input type="text" class="form-control" id="stockChangeReason" placeholder="例：店頭販売分の追加・破損による減数など">
+                                   </div>
+
+                                   <!-- 底部操作按钮：在庫を更新 / 出品一覧 -->
+                                   <div class="d-flex flex-wrap gap-3">
+                                        <button type="button" class="btn btn-dark px-4 py-2" data-bs-toggle="modal" data-bs-target="#stockUpdateModal">
+                                             在庫を更新
+                                        </button>
+                                        <a href="listing.html" class="btn btn-outline-secondary px-4 py-2">
+                                             出品一覧
+                                        </a>
+                                   </div>
+                              </form>
+
+                         </div>
+                    </div>
+
+               </main>
+          </div>
+     </div>
+
+     <!-- 弹窗：在庫を更新 确认弹窗 -->
+     <div class="modal fade" id="stockUpdateModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title fw-bold">在庫更新確認</h5>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                         入力した内容で<strong>在庫数を更新</strong>してもよろしいですか？
+                    </div>
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">キャンセル</button>
+                         <a href="listing.html" class="btn btn-dark">更新を確定する</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

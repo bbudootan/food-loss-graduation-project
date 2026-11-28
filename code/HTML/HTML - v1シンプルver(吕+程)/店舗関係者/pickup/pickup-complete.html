@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>受け取り処理完了 - JEC Food Rescue</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-light">
+
+     <div class="d-flex min-vh-100">
+
+          <!-- 侧边栏（保持受け取り確認高亮） -->
+          <div class="offcanvas-lg offcanvas-start bg-white border-end flex-shrink-0" id="sidebar">
+               <div class="offcanvas-header d-lg-none">
+                    <h5 class="offcanvas-title">メニュー</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebar" aria-label="閉じる"></button>
+               </div>
+
+               <div class="offcanvas-body d-flex flex-column p-3">
+                    <a href="../main/main.html" class="d-block mb-2 text-decoration-none link-body-emphasis">
+                         <div class="fw-bold">JEC Food Rescue</div>
+                         <small class="text-secondary">店舗管理</small>
+                    </a>
+
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../main/main.html"><i class="bi bi-house me-2"></i>メイン</a>
+                    </nav>
+
+                    <p class="small fw-bold text-secondary mt-3 mb-1 ms-2">販売</p>
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link active" href="../pickup/pickup.html"><i class="bi bi-pencil-square me-2"></i>受け取り確認</a>
+                         <a class="nav-link link-body-emphasis" href="../orders/orders.html"><i class="bi bi-receipt me-2"></i>注文管理</a>
+                         <a class="nav-link link-body-emphasis" href="../listing/listing.html"><i class="bi bi-box-seam me-2"></i>出品・在庫</a>
+                    </nav>
+
+                    <!-- 暂时隐藏「商品」和「店舗」分组
+                    <p class="small fw-bold text-secondary mt-3 mb-1 ms-2">商品</p>
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../request/request.html"><i class="bi bi-plus-square me-2"></i>商品登録の依頼</a>
+                         <a class="nav-link link-body-emphasis" href="../history/history.html"><i class="bi bi-clock-history me-2"></i>申請履歴</a>
+                    </nav>
+
+                    <p class="small fw-bold text-secondary mt-3 mb-1 ms-2">店舗</p>
+                    <nav class="nav nav-pills flex-column">
+                         <a class="nav-link link-body-emphasis" href="../sales/sales.html"><i class="bi bi-bar-chart me-2"></i>売り上げ</a>
+                         <a class="nav-link link-body-emphasis" href="../reviews/reviews.html"><i class="bi bi-star me-2"></i>レビュー</a>
+                         <a class="nav-link link-body-emphasis" href="../mail/mail.html"><i class="bi bi-envelope me-2"></i>お知らせメール</a>
+                         <a class="nav-link link-body-emphasis" href="../inquiry/inquiry.html"><i class="bi bi-chat-left-text me-2"></i>お問い合わせ</a>
+                         <a class="nav-link link-body-emphasis" href="../store_info/store_info.html"><i class="bi bi-shop me-2"></i>店舗情報</a>
+                    </nav>
+                    -->
+
+                    <hr>
+                    <a class="nav-link link-body-emphasis" href="../login/login.html"><i class="bi bi-box-arrow-left me-2"></i>ログアウト</a>
+               </div>
+          </div>
+
+          <!-- 右侧内容区 -->
+          <div class="flex-grow-1 overflow-hidden">
+               <header class="d-flex align-items-center border-bottom bg-white px-3" style="min-height: 48px;">
+                    <button class="btn btn-outline-secondary btn-sm d-lg-none me-2" type="button"
+                         data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-label="メニュー">
+                         <i class="bi bi-list"></i>
+                    </button>
+               </header>
+
+               <main class="container-fluid p-4">
+
+                    <!-- 页面标题行 -->
+                    <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-4 pb-2 border-bottom">
+                         <div>
+                              <h1 class="h3 fw-bold mb-1">受け取り処理完了</h1>
+                              <p class="text-secondary mb-0">商品の受け渡し手続きが正常に完了しました</p>
+                         </div>
+                    </div>
+
+                    <!-- 【完成提示卡片（对应原型图中的对勾圆圈与返回按钮）】 -->
+                    <div class="card shadow-sm">
+                         <div class="card-body d-flex flex-column justify-content-center align-items-center text-center py-5 px-4">
+                              
+                              <!-- 绿色对勾图标 -->
+                              <div class="mb-3 text-success">
+                                   <i class="bi bi-check-circle" style="font-size: 5rem;"></i>
+                              </div>
+
+                              <!-- 完成提示文字 -->
+                              <h2 class="h4 fw-bold mb-4">受け取り完了しました</h2>
+
+                              <!-- 返回按钮（对应原型的返回取货首页） -->
+                              <a href="pickup.html" class="btn btn-outline-dark px-4 py-2">
+                                   受け取り確認画面へ
+                              </a>
+
+                         </div>
+                    </div>
+
+               </main>
+          </div>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
