@@ -18,7 +18,7 @@
     <?php else: ?>
         <div class="row g-3">
             <?php foreach ($store_list as $store): ?>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <?php require __DIR__ . '/components/store_card.php'; ?>
                 </div>
             <?php endforeach; ?>
